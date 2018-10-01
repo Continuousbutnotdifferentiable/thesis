@@ -3,6 +3,8 @@ import gzip
 import gensim 
 import logging
 import sys
+from gensim.test.utils import get_tmpfile
+from gensim.models import KeyedVectors
  
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
@@ -35,6 +37,13 @@ documents = list (read_input (data_file))
 logging.info ("Done reading data file")
 
 model = gensim.models.Word2Vec(documents,size=150,window=10,min_count=2,workers=10)
-
 model.train(documents, total_examples=len(documents), epochs=10)
+
+fname = "reviews_data.kv" 
+word_vectors = model.wv
+word_vectors.save(fname)
+distances = []
+for i in documents:
+    for j in i:
+        distances.append()
  
