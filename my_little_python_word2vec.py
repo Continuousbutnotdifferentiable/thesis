@@ -1,4 +1,5 @@
 # imports needed and logging
+import csv
 import gzip
 import gensim 
 import logging
@@ -9,13 +10,10 @@ from gensim.models import KeyedVectors
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
 # Sysarg must be a .txt.gz
-data_file  = sys.argv[1]
+inFile  = sys.argv[1]
+outWordVecs = sys.argv[2]
+#outFile = sys.argv[3]
 
-# read the tokenized reviews into a list
-# each review item becomes a serries of words
-# so this becomes a list of lists
-documents = list (read_input (data_file))
-logging.info ("Done reading data file")
 
 def read_input(input_file):
     """This method reads the input file which is in gzip format"""
@@ -33,17 +31,16 @@ def read_input(input_file):
 # read the tokenized reviews into a list
 # each review item becomes a serries of words
 # so this becomes a list of lists
-documents = list (read_input (data_file))
+documents = list (read_input (inFile))
 logging.info ("Done reading data file")
+
+#with open(outFile, "w") as f:
+#    writer = csv.writer(f)
+#    writer.writerows(documents)
+
 
 model = gensim.models.Word2Vec(documents,size=150,window=10,min_count=2,workers=10)
 model.train(documents, total_examples=len(documents), epochs=10)
 
-fname = "reviews_data.kv" 
 word_vectors = model.wv
-word_vectors.save(fname)
-distances = []
-for i in documents:
-    for j in i:
-        distances.append()
- 
+word_vectors.save(outWordVecs)

@@ -1,4 +1,5 @@
 # thesis
+
 load keyed vectors
 fname = get_tmpfile("vectors.kv")
 >>> word_vectors.save(fname)
