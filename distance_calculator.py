@@ -54,5 +54,5 @@ with open("distance1.txt",'w') as f:
     for i in distancesInternal[0]:
         f.write("%s\n" % i)
 with open("distance2.txt",'w') as f:
-    for i in distancesInternal[1p]:
+    for i in distancesInternal[1]:
         f.write("%s\n" % i)
