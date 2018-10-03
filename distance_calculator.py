@@ -9,7 +9,6 @@ logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=lo
 
 
 inFile = sys.argv[1]
-outFile = sys.argv[2]
 word_vectors = KeyedVectors.load("reviews_vecs.kv", mmap='r')
 print("Vectors Loaded")
 
@@ -32,6 +31,7 @@ documents = list (read_input (inFile))
 distancesInternal = []
 distancesAcross = []
 
+# forms list of lists of distances from valid word cosine similarities
 for file in range(0,9999):
     fileList = []
     for i in range(0,len(documents[file])-1):
@@ -41,18 +41,25 @@ for file in range(0,9999):
     if len(fileList) != 0:
         distancesAcross.append((sum(fileList)/float(len(fileList))))
 
+distancesAcross.sort()
+distancesInternal[0].sort()
+distancesInternal[1].sort()
+distancesInternalJoined = []
+for lists in distancesInternal:
+    for item in lists:
+        distancesInternalJoined.append(item)
 
+distancesInternalJoined.sort()
 
 with open("meanAcross.txt", 'w') as f:
     for item in distancesAcross:
         f.write("%s\n" % item)
 with open("distance10000.txt",'w') as f:
-    for item in distancesInternal:
-        for j in item:
-            f.write("%s\n" % j)
+    for item in distancesInternalJoined:
+            f.write("%s\n" % item)
 with open("distance1.txt",'w') as f:
-    for i in distancesInternal[0]:
-        f.write("%s\n" % i)
+    for item in distancesInternal[0]:
+        f.write("%s\n" % item)
 with open("distance2.txt",'w') as f:
     for i in distancesInternal[1]:
         f.write("%s\n" % i)
