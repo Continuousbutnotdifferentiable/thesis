@@ -11,7 +11,7 @@ logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=lo
 
 # Sysarg must be a .txt.gz
 inFile  = sys.argv[1]
-outWordVecs = sys.argv[2]
+#outWordVecs = sys.argv[2]
 #outFile = sys.argv[3]
 
 
@@ -39,8 +39,14 @@ logging.info ("Done reading data file")
 #    writer.writerows(documents)
 
 
-model = gensim.models.Word2Vec(documents,size=150,window=10,min_count=2,workers=10)
-model.train(documents, total_examples=len(documents), epochs=10)
+model100 = gensim.models.Word2Vec(documents,size=100,window=10,min_count=2,workers=10)
+model100.train(documents, total_examples=len(documents), epochs=10)
 
-word_vectors = model.wv
-word_vectors.save(outWordVecs)
+model200 = gensim.models.Word2Vec(documents,size=200,window=10,min_count=2,workers=10)
+model200.train(documents, total_examples=len(documents), epochs=10)
+
+word_vectors_100 = model100.wv
+word_vectors_100.save("reviews_vecs_100.kv")
+
+word_vectors_200 = model200.wv
+word_vectors_200.save("reviews_vecs_200.kv")
