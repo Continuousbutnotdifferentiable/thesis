@@ -6,7 +6,8 @@ import logging
 import sys
 from gensim.test.utils import get_tmpfile
 from gensim.models import KeyedVectors
- 
+from gensim.parsing.preprocessing import remove_stopwords
+
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
 # Sysarg must be a .txt.gz
@@ -22,11 +23,15 @@ def read_input(input_file):
     
     with gzip.open (input_file, 'rb') as f:
         for i, line in enumerate (f): 
-
+            print(line)
             if (i%10000==0):
                 logging.info ("read {0} reviews".format (i))
             # do some pre-processing and return a list of words for each review text
-            yield gensim.utils.simple_preprocess (line)
+            
+            a = gensim.utils.simple_preprocess(line)
+            for i in a:
+                i = remove_stopwords(i)
+            yield gensim.utils.simple_preprocess(line)
 
 # read the tokenized reviews into a list
 # each review item becomes a serries of words
@@ -45,10 +50,10 @@ model200 = gensim.models.Word2Vec(documents,size=200,window=10,min_count=2,worke
 model200.train(documents, total_examples=len(documents), epochs=10)
 
 word_vectors_100 = model100.wv
-word_vectors_100.save("reviews_vecs_100.kv")
+word_vectors_100.save("reviews_vecs_100_nostop.kv")
 
 word_vectors_150 = model150.wv
-word_vectors_150.save("reviews_vecs_150.kv")
+word_vectors_150.save("reviews_vecs_150_nostop.kv")
 
 word_vectors_200 = model200.wv
-word_vectors_200.save("reviews_vecs_200.kv")
+word_vectors_200.save("reviews_vecs_200_nostop.kv")
