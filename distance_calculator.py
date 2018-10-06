@@ -8,7 +8,10 @@ from statistics import mean
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
 
-inFile = sys.argv[1]
+nostop = sys.argv[1]
+inFile = sys.argv[2]
+
+word_vectors_50 = KeyedVectors.load("reviews_vecs_50.kv", mmap='r')
 word_vectors_100 = KeyedVectors.load("reviews_vecs_100.kv", mmap='r')
 word_vectors_150 = KeyedVectors.load("reviews_vecs_150.kv", mmap='r')
 word_vectors_200 = KeyedVectors.load("reviews_vecs_200.kv", mmap='r')
@@ -42,7 +45,6 @@ for vectors in vectorList:
                 fileList.append(word_vectors.similarity(documents[file][i],documents[file][i+1]))
         distancesInternal.append(fileList)
 
-distancesAcross.sort()
 distancesInternalJoined = []
 for lists in distancesInternal:
     for item in lists:

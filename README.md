@@ -9,3 +9,7 @@ todo:
 implement stopword stripping
 build stopword free keyed vectors
 plot stopword free graphs against stopword "full" graphs
+
+dependencies:
+gensim
+nltk
