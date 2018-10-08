@@ -33,23 +33,23 @@ def read_input(input_file):
 
 documents = list (read_input (inFile))
 
-distancesInternal = []
+distancesInternal10000 = []
+distancesInternal20000 = []
 
 # forms list of lists of distances from valid word cosine similarities
 for vectors in vectorList:
-    word_vectors = i
+    word_vectors = vectors
     for file in range(0,9999):
         fileList = []
         for i in range(0,len(documents[file])-1):
             if documents[file][i] in word_vectors.vocab and documents[file][i+1] in word_vectors.vocab:
                 fileList.append(word_vectors.similarity(documents[file][i],documents[file][i+1]))
-        distancesInternal.append(fileList)
+        distancesInternal10000.append(fileList)
 
 distancesInternalJoined = []
 for lists in distancesInternal:
     for item in lists:
-        if item < 0:
-            item = -item
+        item = abs(item)
         distancesInternalJoined.append(item)
 
 distancesInternalJoined.sort()
