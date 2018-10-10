@@ -28,7 +28,7 @@ if not nostop:
 print("Vectors Loaded")
 
 def read_input(input_file):
-    """This method reads the input file which is in gzip format"""
+    """This function reads the input file which is in gzip format"""
     
     logging.info("reading file {0}...this may take a while".format(input_file))
     
