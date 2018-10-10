@@ -7,6 +7,7 @@ what this means for me tho is that the distance implementation still needs to st
 
 todo:
 finish pickler
+figure out wtf is going on with strip stopwords
 
 dependencies:
 gensim
