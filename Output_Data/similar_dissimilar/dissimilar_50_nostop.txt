@@ -56,7 +56,6 @@ english the 0.08778884
 lot beijing 0.087958716
 lots options 0.08799746
 really liked 0.08822358
-location too 0.088283636
 problem taxis 0.0883562
 money front 0.08871652
 and other 0.08881203

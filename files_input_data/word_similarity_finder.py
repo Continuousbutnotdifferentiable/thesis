@@ -13,11 +13,16 @@ ntlkStopwords = ['i', 'me', 'my', 'myself', 'we', 'our', 'ours', 'ourselves', 'y
 
 inFile = sys.argv[1]
 
+
+
 word_vectors_50_nostop = KeyedVectors.load("vecs_50_nostop.kv", mmap='r')
 word_vectors_200_nostop = KeyedVectors.load("vecs_200_nostop.kv", mmap='r')
 
 word_vectors_50 = KeyedVectors.load("vecs_50.kv", mmap='r')
 word_vectors_200 = KeyedVectors.load("vecs_200.kv", mmap='r')
+
+
+word_vectors_nostop = word_vectors_50_nostop
 
 def read_input(input_file):
     """This function reads the input file which is in gzip format"""
@@ -53,7 +58,7 @@ word_vectors = word_vectors_50
 for file in range(0,30):
     fileList = []
     for i in range(0,len(documents[file])-1):
-        if documents[file][i] in word_vectors.vocab and documents[file][i+1] in word_vectors.vocab:
+        if documents[file][i] in word_vectors_nostop.vocab and documents[file][i+1] in word_vectors_nostop.vocab:
             if (word_vectors.similarity(documents[file][i],documents[file][i+1])) <= .09 and (word_vectors.similarity(documents[file][i],documents[file][i+1])) >= .08:
                 dissimilarList.append((documents[file][i],documents[file][i+1],word_vectors.similarity(documents[file][i],documents[file][i+1])))
             if (word_vectors.similarity(documents[file][i],documents[file][i+1])) <= .95 and (word_vectors.similarity(documents[file][i],documents[file][i+1])) >= .7:
@@ -85,7 +90,7 @@ word_vectors = word_vectors_200
 for file in range(0,30):
     fileList = []
     for i in range(0,len(documents[file])-1):
-        if documents[file][i] in word_vectors.vocab and documents[file][i+1] in word_vectors.vocab:
+        if documents[file][i] in word_vectors_nostop.vocab and documents[file][i+1] in word_vectors_nostop.vocab:
             if (word_vectors.similarity(documents[file][i],documents[file][i+1])) <= .09 and (word_vectors.similarity(documents[file][i],documents[file][i+1])) >= .08:
                 dissimilarList.append((documents[file][i],documents[file][i+1],word_vectors.similarity(documents[file][i],documents[file][i+1])))
             if (word_vectors.similarity(documents[file][i],documents[file][i+1])) <= .95 and (word_vectors.similarity(documents[file][i],documents[file][i+1])) >= .7:
@@ -117,7 +122,7 @@ word_vectors = word_vectors_50_nostop
 for file in range(0,30):
     fileList = []
     for i in range(0,len(documents[file])-1):
-        if documents[file][i] in word_vectors.vocab and documents[file][i+1] in word_vectors.vocab:
+        if documents[file][i] in word_vectors_nostop.vocab and documents[file][i+1] in word_vectors_nostop.vocab:
             if (word_vectors.similarity(documents[file][i],documents[file][i+1])) <= .09 and (word_vectors.similarity(documents[file][i],documents[file][i+1])) >= .08:
                 dissimilarList.append((documents[file][i],documents[file][i+1],word_vectors.similarity(documents[file][i],documents[file][i+1])))
             if (word_vectors.similarity(documents[file][i],documents[file][i+1])) <= .95 and (word_vectors.similarity(documents[file][i],documents[file][i+1])) >= .7:
@@ -149,7 +154,7 @@ word_vectors = word_vectors_200_nostop
 for file in range(0,30):
     fileList = []
     for i in range(0,len(documents[file])-1):
-        if documents[file][i] in word_vectors.vocab and documents[file][i+1] in word_vectors.vocab:
+        if documents[file][i] in word_vectors_nostop.vocab and documents[file][i+1] in word_vectors_nostop.vocab:
             if (word_vectors.similarity(documents[file][i],documents[file][i+1])) <= .09 and (word_vectors.similarity(documents[file][i],documents[file][i+1])) >= .08:
                 dissimilarList.append((documents[file][i],documents[file][i+1],word_vectors.similarity(documents[file][i],documents[file][i+1])))
             if (word_vectors.similarity(documents[file][i],documents[file][i+1])) <= .95 and (word_vectors.similarity(documents[file][i],documents[file][i+1])) >= .7:
