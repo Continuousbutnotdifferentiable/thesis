@@ -10,17 +10,11 @@ figure out wtf is going on with strip stopwords??
 
 do naive compression and decompression
 plot length of distance vector vs cosine similarity
-<<<<<<< HEAD
-<<<<<<< HEAD
+    add norm print function to elegant distance
 plot other metrics for distance
-finish malahanorbitonsad
-=======
-experiment with other metrics for distance
->>>>>>> 37fb428456ad081afdfa5dae8149c827dc13b963
-=======
-experiment with other metrics for distance
->>>>>>> 37fb428456ad081afdfa5dae8149c827dc13b963
+    need to finish malahanorbitonsad
 read compression book
+    done thru chapter 3
 
 done:
 my_little_python_word2vec - returns kv instances
