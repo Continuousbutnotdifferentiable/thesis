@@ -11,8 +11,12 @@ figure out wtf is going on with strip stopwords??
 do naive compression and decompression
 plot length of distance vector vs cosine similarity
 <<<<<<< HEAD
+<<<<<<< HEAD
 plot other metrics for distance
 finish malahanorbitonsad
+=======
+experiment with other metrics for distance
+>>>>>>> 37fb428456ad081afdfa5dae8149c827dc13b963
 =======
 experiment with other metrics for distance
 >>>>>>> 37fb428456ad081afdfa5dae8149c827dc13b963
