@@ -27,21 +27,8 @@ if not nostop:
     vectorList = [word_vectors_50, word_vectors_100 , word_vectors_150 , word_vectors_200]
 print("Vectors Loaded")
 
-def read_input(input_file):
-    """This function reads the input file which is in gzip format"""
-    
-    logging.info("reading file {0}...this may take a while".format(input_file))
-    
-    with gzip.open (input_file, 'rb') as f:
-        for i, line in enumerate (f): 
-
-            if (i%10000==0):
-                logging.info ("read {0} reviews".format (i))
-            # do some pre-processing and return a list of words for each review text
-            yield gensim.utils.simple_preprocess (line)
-
-documents = list (read_input (inFile))
-
+fileObject = open(inFile,'r')  
+documents = pickle.load(fileObject)
 
 # If nostop parameter is true, strip the stopwords if they're in the document and in the ntlkStopwords list
 if nostop:
