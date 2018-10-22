@@ -26,9 +26,9 @@ f.close()
 
 outString = ""
 count = 0
-for vec in data:
+for vec in range(0,10000):
     for string, vector in compressionDictionary.items():
-        if vec == vector:
+        if data[vec] == vector:
             words = string.split()
             outString+= (words[0]+' ')
             count += 1
