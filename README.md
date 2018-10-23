@@ -12,7 +12,6 @@ do naive compression and decompression
 plot length of distance vector vs cosine similarity
     add norm print function to elegant distance
 plot other metrics for distance
-    need to finish malahanorbitonsad
 read compression book
     done thru chapter 3
 
@@ -21,6 +20,8 @@ my_little_python_word2vec - returns kv instances
 distance_calculator - calculates pairwise cosine distances
 pickler - takes .gz and saves it to a pickle for opening by other files
 similarity finder - outputs lists of similar and dissimilar words
+distance_vector_compressor - returns vectors for pairwise words, and pickle of dictionary,
+txt files for a bunch of distance metrics and different vector dimensions.
 
 models trained:
 stopped 5,10,50,100,150,200
