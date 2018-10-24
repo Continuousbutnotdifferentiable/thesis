@@ -1,231 +1,687 @@
 
 formatSpec = '%f';
 
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/bray_curtis_vecs_25_.txt','r');
 bray_curtis_25 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/bray_curtis_vecs_30_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/bray_curtis_vecs_30_.txt','r');
 bray_curtis_30 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/bray_curtis_vecs_35_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/bray_curtis_vecs_35_.txt','r');
 bray_curtis_35 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/bray_curtis_vecs_40_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/bray_curtis_vecs_40_.txt','r');
 bray_curtis_40 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/bray_curtis_vecs_45_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/bray_curtis_vecs_45_.txt','r');
 bray_curtis_45 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/bray_curtis_vecs_50_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/bray_curtis_vecs_50_.txt','r');
 bray_curtis_50 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/bray_curtis_vecs_55_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/bray_curtis_vecs_55_.txt','r');
 bray_curtis_55 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/bray_curtis_vecs_60_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/bray_curtis_vecs_60_.txt','r');
 bray_curtis_60 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/bray_curtis_vecs_65_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/bray_curtis_vecs_65_.txt','r');
 bray_curtis_65 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/bray_curtis_vecs_70_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/bray_curtis_vecs_70_.txt','r');
 bray_curtis_70 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/bray_curtis_vecs_75_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/bray_curtis_vecs_75_.txt','r');
 bray_curtis_75 = fscanf(fileID,formatSpec);
 
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/canberra_vecs_25_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/canberra_vecs_25_.txt','r');
 canberra_25 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/canberra_vecs_30_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/canberra_vecs_30_.txt','r');
 canberra_30 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/canberra_vecs_35_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/canberra_vecs_35_.txt','r');
 canberra_35 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/canberra_vecs_40_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/canberra_vecs_40_.txt','r');
 canberra_40 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/canberra_vecs_45_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/canberra_vecs_45_.txt','r');
 canberra_45 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/canberra_vecs_50_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/canberra_vecs_50_.txt','r');
 canberra_50 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/canberra_vecs_55_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/canberra_vecs_55_.txt','r');
 canberra_55 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/canberra_vecs_60_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/canberra_vecs_60_.txt','r');
 canberra_60 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/canberra_vecs_65_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/canberra_vecs_65_.txt','r');
 canberra_65 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/canberra_vecs_70_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/canberra_vecs_70_.txt','r');
 canberra_70 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/canberra_vecs_75_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/canberra_vecs_75_.txt','r');
 canberra_75 = fscanf(fileID,formatSpec);
 
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/chebyshev_vecs_25_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/chebyshev_vecs_25_.txt','r');
 chebyshev_25 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/chebyshev_vecs_30_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/chebyshev_vecs_30_.txt','r');
 chebyshev_30 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/chebyshev_vecs_35_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/chebyshev_vecs_35_.txt','r');
 chebyshev_35 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/chebyshev_vecs_40_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/chebyshev_vecs_40_.txt','r');
 chebyshev_40 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/chebyshev_vecs_45_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/chebyshev_vecs_45_.txt','r');
 chebyshev_45 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/chebyshev_vecs_50_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/chebyshev_vecs_50_.txt','r');
 chebyshev_50 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/chebyshev_vecs_55_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/chebyshev_vecs_55_.txt','r');
 chebyshev_55 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/chebyshev_vecs_60_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/chebyshev_vecs_60_.txt','r');
 chebyshev_60 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/chebyshev_vecs_65_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/chebyshev_vecs_65_.txt','r');
 chebyshev_65 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/chebyshev_vecs_70_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/chebyshev_vecs_70_.txt','r');
 chebyshev_70 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/chebyshev_vecs_75_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/chebyshev_vecs_75_.txt','r');
 chebyshev_75 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/city_block_vecs_25_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/city_block_vecs_25_.txt','r');
 
 city_block_25 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/city_block_vecs_30_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/city_block_vecs_30_.txt','r');
 city_block_30 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/city_block_vecs_35_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/city_block_vecs_35_.txt','r');
 city_block_35 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/city_block_vecs_40_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/city_block_vecs_40_.txt','r');
 city_block_40 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/city_block_vecs_45_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/city_block_vecs_45_.txt','r');
 city_block_45 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/city_block_vecs_50_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/city_block_vecs_50_.txt','r');
 city_block_50 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/city_block_vecs_55_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/city_block_vecs_55_.txt','r');
 city_block_55 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/city_block_vecs_60_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/city_block_vecs_60_.txt','r');
 city_block_60 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/city_block_vecs_65_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/city_block_vecs_65_.txt','r');
 city_block_65 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/city_block_vecs_70_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/city_block_vecs_70_.txt','r');
 city_block_70 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/city_block_vecs_75_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/city_block_vecs_75_.txt','r');
 city_block_75 = fscanf(fileID,formatSpec);
 
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/correlation_vecs_25_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/correlation_vecs_25_.txt','r');
 correlation_25 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/correlation_vecs_30_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/correlation_vecs_30_.txt','r');
 correlation_30 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/correlation_vecs_35_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/correlation_vecs_35_.txt','r');
 correlation_35 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/correlation_vecs_40_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/correlation_vecs_40_.txt','r');
 correlation_40 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/correlation_vecs_45_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/correlation_vecs_45_.txt','r');
 correlation_45 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/correlation_vecs_50_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/correlation_vecs_50_.txt','r');
 correlation_50 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/correlation_vecs_55_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/correlation_vecs_55_.txt','r');
 correlation_55 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/correlation_vecs_60_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/correlation_vecs_60_.txt','r');
 correlation_60 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/correlation_vecs_65_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/correlation_vecs_65_.txt','r');
 correlation_65 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/correlation_vecs_70_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/correlation_vecs_70_.txt','r');
 correlation_70 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/correlation_vecs_75_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/correlation_vecs_75_.txt','r');
 correlation_75 = fscanf(fileID,formatSpec);
 
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/cosine_vecs_25_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/cosine_vecs_25_.txt','r');
 cosine_25 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/cosine_vecs_30_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/cosine_vecs_30_.txt','r');
 cosine_30 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/cosine_vecs_35_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/cosine_vecs_35_.txt','r');
 cosine_35 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/cosine_vecs_40_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/cosine_vecs_40_.txt','r');
 cosine_40 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/cosine_vecs_45_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/cosine_vecs_45_.txt','r');
 cosine_45 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/cosine_vecs_50_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/cosine_vecs_50_.txt','r');
 cosine_50 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/cosine_vecs_55_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/cosine_vecs_55_.txt','r');
 cosine_55 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/cosine_vecs_60_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/cosine_vecs_60_.txt','r');
 cosine_60 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/cosine_vecs_65_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/cosine_vecs_65_.txt','r');
 cosine_65 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/cosine_vecs_70_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/cosine_vecs_70_.txt','r');
 cosine_70 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/cosine_vecs_75_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/cosine_vecs_75_.txt','r');
 cosine_75 = fscanf(fileID,formatSpec);
 
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/euclidian_vecs_25_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/euclidian_vecs_25_.txt','r');
 euclidian_25 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/euclidian_vecs_30_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/euclidian_vecs_30_.txt','r');
 euclidian_30 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/euclidian_vecs_35_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/euclidian_vecs_35_.txt','r');
 euclidian_35 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/euclidian_vecs_40_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/euclidian_vecs_40_.txt','r');
 euclidian_40 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/euclidian_vecs_45_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/euclidian_vecs_45_.txt','r');
 euclidian_45 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/euclidian_vecs_50_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/euclidian_vecs_50_.txt','r');
 euclidian_50 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/euclidian_vecs_55_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/euclidian_vecs_55_.txt','r');
 euclidian_55 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/euclidian_vecs_60_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/euclidian_vecs_60_.txt','r');
 euclidian_60 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/euclidian_vecs_65_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/euclidian_vecs_65_.txt','r');
 euclidian_65 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/euclidian_vecs_70_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/euclidian_vecs_70_.txt','r');
 euclidian_70 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/euclidian_vecs_75_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/euclidian_vecs_75_.txt','r');
 euclidian_75 = fscanf(fileID,formatSpec);
 
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/minowski_vecs_25_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/minowski_vecs_25_.txt','r');
 minowski_25 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/minowski_vecs_30_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/minowski_vecs_30_.txt','r');
 minowski_30 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/minowski_vecs_35_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/minowski_vecs_35_.txt','r');
 minowski_35 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/minowski_vecs_40_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/minowski_vecs_40_.txt','r');
 minowski_40 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/minowski_vecs_45_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/minowski_vecs_45_.txt','r');
 minowski_45 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/minowski_vecs_50_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/minowski_vecs_50_.txt','r');
 minowski_50 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/minowski_vecs_55_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/minowski_vecs_55_.txt','r');
 minowski_55 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/minowski_vecs_60_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/minowski_vecs_60_.txt','r');
 minowski_60 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/minowski_vecs_65_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/minowski_vecs_65_.txt','r');
 minowski_65 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/minowski_vecs_70_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/minowski_vecs_70_.txt','r');
 minowski_70 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/minowski_vecs_75_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/minowski_vecs_75_.txt','r');
 minowski_75 = fscanf(fileID,formatSpec);
 
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/sqeuclidian_vecs_25_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/sqeuclidian_vecs_25_.txt','r');
 sqeuclidian_25 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/sqeuclidian_vecs_30_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/sqeuclidian_vecs_30_.txt','r');
 sqeuclidian_30 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/sqeuclidian_vecs_35_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/sqeuclidian_vecs_35_.txt','r');
 sqeuclidian_35 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/sqeuclidian_vecs_40_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/sqeuclidian_vecs_40_.txt','r');
 sqeuclidian_40 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/sqeuclidian_vecs_45_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/sqeuclidian_vecs_45_.txt','r');
 sqeuclidian_45 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/sqeuclidian_vecs_50_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/sqeuclidian_vecs_50_.txt','r');
 sqeuclidian_50 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/sqeuclidian_vecs_55_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/sqeuclidian_vecs_55_.txt','r');
 sqeuclidian_55 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/sqeuclidian_vecs_60_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/sqeuclidian_vecs_60_.txt','r');
 sqeuclidian_60 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/sqeuclidian_vecs_65_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/sqeuclidian_vecs_65_.txt','r');
 sqeuclidian_65 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/sqeuclidian_vecs_70_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/sqeuclidian_vecs_70_.txt','r');
 sqeuclidian_70 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/sqeuclidian_vecs_75_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/sqeuclidian_vecs_75_.txt','r');
 sqeuclidian_75 = fscanf(fileID,formatSpec);
 
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/head_to_head_norm_vecs_25_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_norm_vecs_25_.txt','r');
 head_to_head_norm_25 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/head_to_head_norm_vecs_30_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_norm_vecs_30_.txt','r');
 head_to_head_norm_30 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/head_to_head_norm_vecs_35_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_norm_vecs_35_.txt','r');
 head_to_head_norm_35 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/head_to_head_norm_vecs_40_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_norm_vecs_40_.txt','r');
 head_to_head_norm_40 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/head_to_head_norm_vecs_45_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_norm_vecs_45_.txt','r');
 head_to_head_norm_45 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/head_to_head_norm_vecs_50_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_norm_vecs_50_.txt','r');
 head_to_head_norm_50 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/head_to_head_norm_vecs_55_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_norm_vecs_55_.txt','r');
 head_to_head_norm_55 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/head_to_head_norm_vecs_60_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_norm_vecs_60_.txt','r');
 head_to_head_norm_60 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/head_to_head_norm_vecs_65_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_norm_vecs_65_.txt','r');
 head_to_head_norm_65 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/head_to_head_norm_vecs_70_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_norm_vecs_70_.txt','r');
 head_to_head_norm_70 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data/head_to_head_norm_vecs_75_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_norm_vecs_75_.txt','r');
 head_to_head_norm_75 = fscanf(fileID,formatSpec);
+
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/mahalanobis_vecs_25_.txt','r');
+mahalanobis_25 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/mahalanobis_vecs_30_.txt','r');
+mahalanobis_30 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/mahalanobis_vecs_35_.txt','r');
+mahalanobis_35 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/mahalanobis_vecs_40_.txt','r');
+mahalanobis_40 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/mahalanobis_vecs_45_.txt','r');
+mahalanobis_45 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/mahalanobis_vecs_50_.txt','r');
+mahalanobis_50 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/mahalanobis_vecs_55_.txt','r');
+mahalanobis_55 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/mahalanobis_vecs_60_.txt','r');
+mahalanobis_60 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/mahalanobis_vecs_65_.txt','r');
+mahalanobis_65 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/mahalanobis_vecs_70_.txt','r');
+mahalanobis_70 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/mahalanobis_vecs_75_.txt','r');
+mahalanobis_75 = fscanf(fileID,formatSpec);
+
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_vecs_25_.txt','r');
+gensim_cosine_25 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_vecs_30_.txt','r');
+gensim_cosine_30 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_vecs_35_.txt','r');
+gensim_cosine_35 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_vecs_40_.txt','r');
+gensim_cosine_40 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_vecs_45_.txt','r');
+gensim_cosine_45 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_vecs_50_.txt','r');
+gensim_cosine_50 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_vecs_55_.txt','r');
+gensim_cosine_55 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_vecs_60_.txt','r');
+gensim_cosine_60 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_vecs_65_.txt','r');
+gensim_cosine_65 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_vecs_70_.txt','r');
+gensim_cosine_70 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_vecs_75_.txt','r');
+gensim_cosine_75 = fscanf(fileID,formatSpec);
+
+
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_noabs_vecs_25_.txt','r');
+gensim_cosine_noabs_25 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_noabs_vecs_30_.txt','r');
+gensim_cosine_noabs_30 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_noabs_vecs_35_.txt','r');
+gensim_cosine_noabs_35 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_noabs_vecs_40_.txt','r');
+gensim_cosine_noabs_40 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_noabs_vecs_45_.txt','r');
+gensim_cosine_noabs_45 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_noabs_vecs_50_.txt','r');
+gensim_cosine_noabs_50 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_noabs_vecs_55_.txt','r');
+gensim_cosine_noabs_55 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_noabs_vecs_60_.txt','r');
+gensim_cosine_noabs_60 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_noabs_vecs_65_.txt','r');
+gensim_cosine_noabs_65 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_noabs_vecs_70_.txt','r');
+gensim_cosine_noabs_70 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_noabs_vecs_75_.txt','r');
+gensim_cosine_noabs_75 = fscanf(fileID,formatSpec);
+
+bray_curtis_25_normalized = bray_curtis_25/max(bray_curtis_25);
+bray_curtis_35_normalized = bray_curtis_35/max(bray_curtis_35);
+bray_curtis_45_normalized = bray_curtis_45/max(bray_curtis_45);
+bray_curtis_55_normalized = bray_curtis_55/max(bray_curtis_55);
+bray_curtis_65_normalized = bray_curtis_65/max(bray_curtis_65);
+bray_curtis_75_normalized = bray_curtis_75/max(bray_curtis_75);
+
+canberra_25_normalized = canberra_25/max(canberra_25);
+canberra_35_normalized = canberra_35/max(canberra_35);
+canberra_45_normalized = canberra_45/max(canberra_45);
+canberra_55_normalized = canberra_55/max(canberra_55);
+canberra_65_normalized = canberra_65/max(canberra_65);
+canberra_75_normalized = canberra_75/max(canberra_75);
+
+chebyshev_25_normalized = chebyshev_25/max(chebyshev_25);
+chebyshev_35_normalized = chebyshev_35/max(chebyshev_35);
+chebyshev_45_normalized = chebyshev_45/max(chebyshev_45);
+chebyshev_55_normalized = chebyshev_55/max(chebyshev_55);
+chebyshev_65_normalized = chebyshev_65/max(chebyshev_65);
+chebyshev_75_normalized = chebyshev_75/max(chebyshev_75);
+
+city_block_25_normalized = city_block_25/max(city_block_25);
+city_block_35_normalized = city_block_35/max(city_block_35);
+city_block_45_normalized = city_block_45/max(city_block_45);
+city_block_55_normalized = city_block_55/max(city_block_55);
+city_block_65_normalized = city_block_65/max(city_block_65);
+city_block_75_normalized = city_block_75/max(city_block_75);
+
+correlation_25_normalized = correlation_25/max(correlation_25);
+correlation_35_normalized = correlation_35/max(correlation_35);
+correlation_45_normalized = correlation_45/max(correlation_45);
+correlation_55_normalized = correlation_55/max(correlation_55);
+correlation_65_normalized = correlation_65/max(correlation_65);
+correlation_75_normalized = correlation_75/max(correlation_75);
+
+cosine_25_normalized = cosine_25/max(cosine_25);
+cosine_35_normalized = cosine_35/max(cosine_35);
+cosine_45_normalized = cosine_45/max(cosine_45);
+cosine_55_normalized = cosine_55/max(cosine_55);
+cosine_65_normalized = cosine_65/max(cosine_65);
+cosine_75_normalized = cosine_75/max(cosine_75);
+
+euclidian_25_normalized = euclidian_25/max(euclidian_25);
+euclidian_35_normalized = euclidian_35/max(euclidian_35);
+euclidian_45_normalized = euclidian_45/max(euclidian_45);
+euclidian_55_normalized = euclidian_55/max(euclidian_55);
+euclidian_65_normalized = euclidian_65/max(euclidian_65);
+euclidian_75_normalized = euclidian_75/max(euclidian_75);
+
+head_to_head_norm_25_normalized = head_to_head_norm_25/max(head_to_head_norm_25);
+head_to_head_norm_35_normalized = head_to_head_norm_35/max(head_to_head_norm_35);
+head_to_head_norm_45_normalized = head_to_head_norm_45/max(head_to_head_norm_45);
+head_to_head_norm_55_normalized = head_to_head_norm_55/max(head_to_head_norm_55);
+head_to_head_norm_65_normalized = head_to_head_norm_65/max(head_to_head_norm_65);
+head_to_head_norm_75_normalized = head_to_head_norm_75/max(head_to_head_norm_75);
+
+minowski_25_normalized = minowski_25/max(minowski_25);
+minowski_35_normalized = minowski_35/max(minowski_35);
+minowski_45_normalized = minowski_45/max(minowski_45);
+minowski_55_normalized = minowski_55/max(minowski_55);
+minowski_65_normalized = minowski_65/max(minowski_65);
+minowski_75_normalized = minowski_75/max(minowski_75);
+
+sqeuclidian_25_normalized = sqeuclidian_25/max(sqeuclidian_25);
+sqeuclidian_35_normalized = sqeuclidian_35/max(sqeuclidian_35);
+sqeuclidian_45_normalized = sqeuclidian_45/max(sqeuclidian_45);
+sqeuclidian_55_normalized = sqeuclidian_55/max(sqeuclidian_55);
+sqeuclidian_65_normalized = sqeuclidian_65/max(sqeuclidian_65);
+sqeuclidian_75_normalized = sqeuclidian_75/max(sqeuclidian_75);
+
+mahalanobis_25_normalized = mahalanobis_25/max(mahalanobis_25);
+mahalanobis_35_normalized = mahalanobis_35/max(mahalanobis_35);
+mahalanobis_45_normalized = mahalanobis_45/max(mahalanobis_45);
+mahalanobis_55_normalized = mahalanobis_55/max(mahalanobis_55);
+mahalanobis_65_normalized = mahalanobis_65/max(mahalanobis_65);
+mahalanobis_75_normalized = mahalanobis_75/max(mahalanobis_75);
+
+gensim_cosine_25_normalized = gensim_cosine_25/max(gensim_cosine_25);
+gensim_cosine_35_normalized = gensim_cosine_35/max(gensim_cosine_35);
+gensim_cosine_45_normalized = gensim_cosine_45/max(gensim_cosine_45);
+gensim_cosine_55_normalized = gensim_cosine_55/max(gensim_cosine_55);
+gensim_cosine_65_normalized = gensim_cosine_65/max(gensim_cosine_65);
+gensim_cosine_75_normalized = gensim_cosine_75/max(gensim_cosine_75);
+
+gensim_cosine_noabs_25_normalized = gensim_cosine_noabs_25/max(gensim_cosine_noabs_25);
+gensim_cosine_noabs_35_normalized = gensim_cosine_noabs_35/max(gensim_cosine_noabs_35);
+gensim_cosine_noabs_45_normalized = gensim_cosine_noabs_45/max(gensim_cosine_noabs_45);
+gensim_cosine_noabs_55_normalized = gensim_cosine_noabs_55/max(gensim_cosine_noabs_55);
+gensim_cosine_noabs_65_normalized = gensim_cosine_noabs_65/max(gensim_cosine_noabs_65);
+gensim_cosine_noabs_75_normalized = gensim_cosine_noabs_75/max(gensim_cosine_noabs_75);
+
+linestyles_for_distances = linspecer(6);
+set(groot,'defaultAxesColorOrder',linestyles_for_distances);
+
+
+ksdensity(bray_curtis_25);
+hold on;
+ksdensity(bray_curtis_35);
+ksdensity(bray_curtis_45);
+ksdensity(bray_curtis_55);
+ksdensity(bray_curtis_65);
+ksdensity(bray_curtis_75);
+legend('Bray-Curtis 25','Bray-Curtis 35','Bray-Curtis 45','Bray-Curtis 55','Bray-Curtis 65','Bray-Curtis 75');
+title('PDF Plot of Bray-Curtis Distances for Vector sizes 25-75');
+xlim([0 inf]);
+saveas(gcf,'bray_curtis_distances.png')
+hold off;
+
+ksdensity(canberra_25);
+hold on;
+ksdensity(canberra_35);
+ksdensity(canberra_45);
+ksdensity(canberra_55);
+ksdensity(canberra_65);
+ksdensity(canberra_75);
+legend('Canberra 25','Canberra 35','Canberra 45','Canberra 55','Canberra 65','Canberra 75');
+title('PDF Plot of Canberra Distances for Vector sizes 25-75');
+xlim([0 inf]);
+saveas(gcf,'canberra_distances.png')
+hold off;
+
+ksdensity(chebyshev_25);
+hold on;
+ksdensity(chebyshev_35);
+ksdensity(chebyshev_45);
+ksdensity(chebyshev_55);
+ksdensity(chebyshev_65);
+ksdensity(chebyshev_75);
+legend('Chebyshev 25','Chebyshev 35','Chebyshev 45','Chebyshev 55','Chebyshev 65','Chebyshev 75');
+title('PDF Plot of Chebyshev Distances for Vector sizes 25-75');
+xlim([0 inf]);
+saveas(gcf,'chebyshev_distances.png')
+hold off;
+
+ksdensity(city_block_25);
+hold on;
+ksdensity(city_block_35);
+ksdensity(city_block_45);
+ksdensity(city_block_55);
+ksdensity(city_block_65);
+ksdensity(city_block_75);
+legend('City Block 25','City Block 35','City Block 45','City Block 55','City Block 65','City Block 75');
+title('PDF Plot of City Block Distances for Vector sizes 25-75');
+xlim([0 inf]);
+saveas(gcf,'city_block_distances.png')
+hold off;
+
+ksdensity(correlation_25);
+hold on;
+ksdensity(correlation_35);
+ksdensity(correlation_45);
+ksdensity(correlation_55);
+ksdensity(correlation_65);
+ksdensity(correlation_75);
+legend('Correlation 25','Correlation 35','Correlation 45','Correlation 55','Correlation 65','Correlation 75');
+title('PDF Plot of Correlation Distances for Vector sizes 25-75');
+xlim([0 inf]);
+saveas(gcf,'correlation_distances.png')
+hold off;
+
+ksdensity(cosine_25);
+hold on;
+ksdensity(cosine_35);
+ksdensity(cosine_45);
+ksdensity(cosine_55);
+ksdensity(cosine_65);
+ksdensity(cosine_75);
+legend('Cosine 25','Cosine 35','Cosine 45','Cosine 55','Cosine 65','Cosine 75');
+title('PDF Plot of Cosine Distances for Vector sizes 25-75');
+xlim([0 inf]);
+saveas(gcf,'cosine_distances.png')
+hold off;
+
+ksdensity(euclidian_25);
+hold on;
+ksdensity(euclidian_35);
+ksdensity(euclidian_45);
+ksdensity(euclidian_55);
+ksdensity(euclidian_65);
+ksdensity(euclidian_75);
+legend('Euclidian 25','Euclidian 35','Euclidian 45','Euclidian 55','Euclidian 65','Euclidian 75');
+title('PDF Plot of Euclidian Distances for Vector sizes 25-75');
+xlim([0 inf]);
+saveas(gcf,'euclidian_distances.png')
+hold off;
+
+ksdensity(gensim_cosine_25);
+hold on;
+ksdensity(gensim_cosine_35);
+ksdensity(gensim_cosine_45);
+ksdensity(gensim_cosine_55);
+ksdensity(gensim_cosine_65);
+ksdensity(gensim_cosine_75);
+legend('Gensim Cosine 25','Gensim Cosine 35','Gensim Cosine 45','Gensim Cosine 55','Gensim Cosine 65','Gensim Cosine 75');
+title('PDF Plot of Gensim Cosine Distances for Vector sizes 25-75');
+xlim([0 inf]);
+saveas(gcf,'gensim_cosine_distances.png')
+hold off;
+
+ksdensity(head_to_head_norm_25);
+hold on;
+ksdensity(head_to_head_norm_35);
+ksdensity(head_to_head_norm_45);
+ksdensity(head_to_head_norm_55);
+ksdensity(head_to_head_norm_65);
+ksdensity(head_to_head_norm_75);
+legend('Norm  25','Norm  35','Norm  45','Norm  55','Norm  65','Norm  75');
+title('PDF Plot of Norm Length for Vector sizes 25-75');
+xlim([0 inf]);
+saveas(gcf,'head_to_head_norm_distances.png')
+hold off;
+
+ksdensity(mahalanobis_25);
+hold on;
+ksdensity(mahalanobis_35);
+ksdensity(mahalanobis_45);
+ksdensity(mahalanobis_55);
+ksdensity(mahalanobis_65);
+ksdensity(mahalanobis_75);
+legend('Mahalanobis 25','Mahalanobis 35','Mahalanobis 45','Mahalanobis 55','Mahalanobis 65','Mahalanobis 75');
+title('PDF Plot of Mahalanobis Distances for Vector sizes 25-75');
+xlim([0 inf]);
+saveas(gcf,'mahalanobis_distances.png')
+hold off;
+
+ksdensity(minowski_25);
+hold on;
+ksdensity(minowski_35);
+ksdensity(minowski_45);
+ksdensity(minowski_55);
+ksdensity(minowski_65);
+ksdensity(minowski_75);
+legend('Minowski  25','Minowski  35','Minowski  45','Minowski  55','Minowski  65','Minowski  75');
+title('PDF Plot of Minowski Distance for Vector sizes 25-75');
+xlim([0 inf]);
+saveas(gcf,'minowski_distances.png')
+hold off;
+
+ksdensity(sqeuclidian_25);
+hold on;
+ksdensity(sqeuclidian_35);
+ksdensity(sqeuclidian_45);
+ksdensity(sqeuclidian_55);
+ksdensity(sqeuclidian_65);
+ksdensity(sqeuclidian_75);
+legend('Square Euclidian 25','Square Euclidian 35','Square Euclidian 45','Square Euclidian 55','Square Euclidian 65','Square Euclidian 75');
+title('PDF Plot of Square Euclidian Distances for Vector sizes 25-75');
+xlim([0 inf]);
+saveas(gcf,'sqeuclidian_distances.png')
+hold off;
+
+ksdensity(gensim_cosine_noabs_25);
+hold on;
+ksdensity(gensim_cosine_noabs_35);
+ksdensity(gensim_cosine_noabs_45);
+ksdensity(gensim_cosine_noabs_55);
+ksdensity(gensim_cosine_noabs_65);
+ksdensity(gensim_cosine_noabs_75);
+legend('Gensim Cosine Noabs 25','Gensim Cosine Noabs 35','Gensim Cosine Noabs 45','Gensim Cosine Noabs 55','Gensim Cosine Noabs 65','Gensim Cosine Noabs 75');
+title('PDF Plot of Gensim Cosine Noabs Distances for Vector sizes 25-75');
+xlim([-1 1]);
+saveas(gcf,'gensim_cosine_noabs_distances.png')
+hold off;
+
+linestyles_for_all_distances = linspecer(11);
+set(groot,'defaultAxesColorOrder',linestyles_for_all_distances);
+
+
+ksdensity(bray_curtis_25_normalized);
+hold on;
+ksdensity(canberra_25_normalized);
+ksdensity(chebyshev_25_normalized);
+ksdensity(city_block_25_normalized);
+ksdensity(correlation_25_normalized);
+ksdensity(cosine_25_normalized);
+ksdensity(euclidian_25_normalized);
+ksdensity(gensim_cosine_noabs_25_normalized);
+ksdensity(head_to_head_norm_25_normalized);
+ksdensity(mahalanobis_25_normalized);
+ksdensity(minowski_25_normalized);
+
+xlim([0 1]);
+legend('Bray-Curtis','Canberra','Chebyshev','City-Block','Correlation','Cosine','Euclidian','Gensim Cosine','Norm','Mahalanobis','Minowski');
+title('PDF Plot of Normalized Distances for Vector Size 25');
+saveas(gcf,'all_distances_25.png')
+hold off;
+
+ksdensity(bray_curtis_35_normalized);
+hold on;
+ksdensity(canberra_35_normalized);
+ksdensity(chebyshev_35_normalized);
+ksdensity(city_block_35_normalized);
+ksdensity(correlation_35_normalized);
+ksdensity(cosine_35_normalized);
+ksdensity(euclidian_35_normalized);
+ksdensity(gensim_cosine_noabs_35_normalized);
+ksdensity(head_to_head_norm_35_normalized);
+ksdensity(mahalanobis_35_normalized);
+ksdensity(minowski_35_normalized);
+
+xlim([0 1]);
+legend('Bray-Curtis','Canberra','Chebyshev','City-Block','Correlation','Cosine','Euclidian','Gensim Cosine','Norm','Mahalanobis','Minowski');
+title('PDF Plot of Normalized Distances for Vector Size 35');
+saveas(gcf,'all_distances_35.png')
+hold off;
+
+ksdensity(bray_curtis_45_normalized);
+hold on;
+ksdensity(canberra_45_normalized);
+ksdensity(chebyshev_45_normalized);
+ksdensity(city_block_45_normalized);
+ksdensity(correlation_45_normalized);
+ksdensity(cosine_45_normalized);
+ksdensity(euclidian_45_normalized);
+ksdensity(gensim_cosine_noabs_45_normalized);
+ksdensity(head_to_head_norm_45_normalized);
+ksdensity(mahalanobis_45_normalized);
+ksdensity(minowski_45_normalized);
+
+xlim([0 1]);
+legend('Bray-Curtis','Canberra','Chebyshev','City-Block','Correlation','Cosine','Euclidian','Gensim Cosine','Norm','Mahalanobis','Minowski');
+title('PDF Plot of Normalized Distances for Vector Size 45');
+saveas(gcf,'all_distances_45.png')
+hold off;
+
+
+ksdensity(bray_curtis_55_normalized);
+hold on;
+ksdensity(canberra_55_normalized);
+ksdensity(chebyshev_55_normalized);
+ksdensity(city_block_55_normalized);
+ksdensity(correlation_55_normalized);
+ksdensity(cosine_55_normalized);
+ksdensity(euclidian_55_normalized);
+ksdensity(gensim_cosine_noabs_55_normalized);
+ksdensity(head_to_head_norm_55_normalized);
+ksdensity(mahalanobis_55_normalized);
+ksdensity(minowski_55_normalized);
+
+xlim([0 1]);
+legend('Bray-Curtis','Canberra','Chebyshev','City-Block','Correlation','Cosine','Euclidian','Gensim Cosine','Norm','Mahalanobis','Minowski');
+title('PDF Plot of Normalized Distances for Vector Size 55');
+saveas(gcf,'all_distances_55.png')
+hold off;
+
+
+ksdensity(bray_curtis_65_normalized);
+hold on;
+ksdensity(canberra_65_normalized);
+ksdensity(chebyshev_65_normalized);
+ksdensity(city_block_65_normalized);
+ksdensity(correlation_65_normalized);
+ksdensity(cosine_65_normalized);
+ksdensity(euclidian_65_normalized);
+ksdensity(gensim_cosine_noabs_65_normalized);
+ksdensity(head_to_head_norm_65_normalized);
+ksdensity(mahalanobis_65_normalized);
+ksdensity(minowski_65_normalized);
+
+xlim([0 1]);
+legend('Bray-Curtis','Canberra','Chebyshev','City-Block','Correlation','Cosine','Euclidian','Gensim Cosine','Norm','Mahalanobis','Minowski');
+title('PDF Plot of Normalized Distances for Vector Size 65');
+saveas(gcf,'all_distances_65.png')
+hold off;
+
+
+ksdensity(bray_curtis_75_normalized);
+hold on;
+ksdensity(canberra_75_normalized);
+ksdensity(chebyshev_75_normalized);
+ksdensity(city_block_75_normalized);
+ksdensity(correlation_75_normalized);
+ksdensity(cosine_75_normalized);
+ksdensity(euclidian_75_normalized);
+ksdensity(gensim_cosine_noabs_75_normalized);
+ksdensity(head_to_head_norm_75_normalized);
+ksdensity(mahalanobis_75_normalized);
+ksdensity(minowski_75_normalized);
+
+xlim([0 1]);
+legend('Bray-Curtis','Canberra','Chebyshev','City-Block','Correlation','Cosine','Euclidian','Gensim Cosine','Norm','Mahalanobis','Minowski');
+title('PDF Plot of Normalized Distances for Vector Size 75');
+saveas(gcf,'all_distances_75.png')
+hold off;

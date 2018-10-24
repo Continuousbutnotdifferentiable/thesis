@@ -6,14 +6,14 @@ apparently gensim already downsamples stopwords when its doing the model trainin
 what this means for me tho is that the distance implementation still needs to strip out stopwords
 
 todo:
-figure out wtf is going on with strip stopwords??
+
+write up arithmetic coding eg in python
+    file pg 112, pg 132 
 
 do naive compression and decompression
-plot length of distance vector vs cosine similarity
-    add norm print function to elegant distance
-plot other metrics for distance
+
 read compression book
-    done thru chapter 3
+    done thru chapter 5
 
 done:
 my_little_python_word2vec - returns kv instances
@@ -21,7 +21,8 @@ distance_calculator - calculates pairwise cosine distances
 pickler - takes .gz and saves it to a pickle for opening by other files
 similarity finder - outputs lists of similar and dissimilar words
 distance_vector_compressor - returns vectors for pairwise words, and pickle of dictionary,
-txt files for a bunch of distance metrics and different vector dimensions.
+txt files for a bunch of distance metrics and different vector dimensions, norms for head_to_head
+plots of 25-75 for each metric and across metrics for each dimension
 
 models trained:
 stopped 5,10,50,100,150,200
