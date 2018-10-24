@@ -6,6 +6,7 @@ import gzip
 import logging
 from scipy.spatial import distance
 from gensim.models import KeyedVectors
+from numpy import linalg
 
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
@@ -61,6 +62,8 @@ for string, vector in vectorDictionary.items():
                         vectorBetween = function(vector1,vector2)
                         vectorArray.append(vectorBetween)
                         fileDictionary[words] = vectorBetween
+                        for vector in vectorArray:
+                            fileArray.append(linalg.norm(vector))
                     if functionName == "mahalanobis_":
                         fileArray.append(vector1)
                         fileArray.append(vector2)
@@ -74,6 +77,10 @@ for string, vector in vectorDictionary.items():
             f.close()
             with open(functionName+string+".p","wb") as f:
                 pickle.dump(fileDictionary, f)
+            f.close()
+            with open(functionName+string+".txt","w") as f:
+                for item in fileArray:
+                    f.write("%s\n" % item)
             f.close()
         else:
             with open(functionName+string+".txt","w") as f:
