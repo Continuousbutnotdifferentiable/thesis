@@ -278,28 +278,28 @@ fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_100
 gensim_cosine_75 = fscanf(fileID,formatSpec);
 
 
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_noabs_vecs_25_.txt','r');
-gensim_cosine_noabs_25 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_noabs_vecs_30_.txt','r');
-gensim_cosine_noabs_30 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_noabs_vecs_35_.txt','r');
-gensim_cosine_noabs_35 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_noabs_vecs_40_.txt','r');
-gensim_cosine_noabs_40 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_noabs_vecs_45_.txt','r');
-gensim_cosine_noabs_45 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_noabs_vecs_50_.txt','r');
-gensim_cosine_noabs_50 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_noabs_vecs_55_.txt','r');
-gensim_cosine_noabs_55 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_noabs_vecs_60_.txt','r');
-gensim_cosine_noabs_60 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_noabs_vecs_65_.txt','r');
-gensim_cosine_noabs_65 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_noabs_vecs_70_.txt','r');
-gensim_cosine_noabs_70 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_noabs_vecs_75_.txt','r');
-gensim_cosine_noabs_75 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_abs_vecs_25_.txt','r');
+gensim_cosine_abs_25 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_abs_vecs_30_.txt','r');
+gensim_cosine_abs_30 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_abs_vecs_35_.txt','r');
+gensim_cosine_abs_35 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_abs_vecs_40_.txt','r');
+gensim_cosine_abs_40 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_abs_vecs_45_.txt','r');
+gensim_cosine_abs_45 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_abs_vecs_50_.txt','r');
+gensim_cosine_abs_50 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_abs_vecs_55_.txt','r');
+gensim_cosine_abs_55 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_abs_vecs_60_.txt','r');
+gensim_cosine_abs_60 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_abs_vecs_65_.txt','r');
+gensim_cosine_abs_65 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_abs_vecs_70_.txt','r');
+gensim_cosine_abs_70 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/gensim_cosine_abs_vecs_75_.txt','r');
+gensim_cosine_abs_75 = fscanf(fileID,formatSpec);
 
 bray_curtis_25_normalized = bray_curtis_25/max(bray_curtis_25);
 bray_curtis_35_normalized = bray_curtis_35/max(bray_curtis_35);
@@ -378,19 +378,19 @@ mahalanobis_55_normalized = mahalanobis_55/max(mahalanobis_55);
 mahalanobis_65_normalized = mahalanobis_65/max(mahalanobis_65);
 mahalanobis_75_normalized = mahalanobis_75/max(mahalanobis_75);
 
-gensim_cosine_25_normalized = gensim_cosine_25/max(gensim_cosine_25);
-gensim_cosine_35_normalized = gensim_cosine_35/max(gensim_cosine_35);
-gensim_cosine_45_normalized = gensim_cosine_45/max(gensim_cosine_45);
-gensim_cosine_55_normalized = gensim_cosine_55/max(gensim_cosine_55);
-gensim_cosine_65_normalized = gensim_cosine_65/max(gensim_cosine_65);
-gensim_cosine_75_normalized = gensim_cosine_75/max(gensim_cosine_75);
+gensim_cosine_25_normalized = (gensim_cosine_25+1)/max(gensim_cosine_25+1);
+gensim_cosine_35_normalized = (gensim_cosine_35+1)/max(gensim_cosine_35+1);
+gensim_cosine_45_normalized = (gensim_cosine_45+1)/max(gensim_cosine_45+1);
+gensim_cosine_55_normalized = (gensim_cosine_55+1)/max(gensim_cosine_55+1);
+gensim_cosine_65_normalized = (gensim_cosine_65+1)/max(gensim_cosine_65+1);
+gensim_cosine_75_normalized = (gensim_cosine_75+1)/max(gensim_cosine_75+1);
 
-gensim_cosine_noabs_25_normalized = gensim_cosine_noabs_25/max(gensim_cosine_noabs_25);
-gensim_cosine_noabs_35_normalized = gensim_cosine_noabs_35/max(gensim_cosine_noabs_35);
-gensim_cosine_noabs_45_normalized = gensim_cosine_noabs_45/max(gensim_cosine_noabs_45);
-gensim_cosine_noabs_55_normalized = gensim_cosine_noabs_55/max(gensim_cosine_noabs_55);
-gensim_cosine_noabs_65_normalized = gensim_cosine_noabs_65/max(gensim_cosine_noabs_65);
-gensim_cosine_noabs_75_normalized = gensim_cosine_noabs_75/max(gensim_cosine_noabs_75);
+gensim_cosine_abs_25_normalized = gensim_cosine_abs_25/max(gensim_cosine_abs_25);
+gensim_cosine_abs_35_normalized = gensim_cosine_abs_35/max(gensim_cosine_abs_35);
+gensim_cosine_abs_45_normalized = gensim_cosine_abs_45/max(gensim_cosine_abs_45);
+gensim_cosine_abs_55_normalized = gensim_cosine_abs_55/max(gensim_cosine_abs_55);
+gensim_cosine_abs_65_normalized = gensim_cosine_abs_65/max(gensim_cosine_abs_65);
+gensim_cosine_abs_75_normalized = gensim_cosine_abs_75/max(gensim_cosine_abs_75);
 
 linestyles_for_distances = linspecer(6);
 set(groot,'defaultAxesColorOrder',linestyles_for_distances);
@@ -496,7 +496,7 @@ ksdensity(gensim_cosine_65);
 ksdensity(gensim_cosine_75);
 legend('Gensim Cosine 25','Gensim Cosine 35','Gensim Cosine 45','Gensim Cosine 55','Gensim Cosine 65','Gensim Cosine 75');
 title('PDF Plot of Gensim Cosine Distances for Vector sizes 25-75');
-xlim([0 inf]);
+xlim([-1 1]);
 saveas(gcf,'gensim_cosine_distances.png')
 hold off;
 
@@ -552,18 +552,189 @@ xlim([0 inf]);
 saveas(gcf,'sqeuclidian_distances.png')
 hold off;
 
-ksdensity(gensim_cosine_noabs_25);
+ksdensity(gensim_cosine_abs_25);
 hold on;
-ksdensity(gensim_cosine_noabs_35);
-ksdensity(gensim_cosine_noabs_45);
-ksdensity(gensim_cosine_noabs_55);
-ksdensity(gensim_cosine_noabs_65);
-ksdensity(gensim_cosine_noabs_75);
-legend('Gensim Cosine Noabs 25','Gensim Cosine Noabs 35','Gensim Cosine Noabs 45','Gensim Cosine Noabs 55','Gensim Cosine Noabs 65','Gensim Cosine Noabs 75');
-title('PDF Plot of Gensim Cosine Noabs Distances for Vector sizes 25-75');
-xlim([-1 1]);
-saveas(gcf,'gensim_cosine_noabs_distances.png')
+ksdensity(gensim_cosine_abs_35);
+ksdensity(gensim_cosine_abs_45);
+ksdensity(gensim_cosine_abs_55);
+ksdensity(gensim_cosine_abs_65);
+ksdensity(gensim_cosine_abs_75);
+legend('Gensim Cosine Absolute Value 25','Gensim Cosine Absolute Value 35','Gensim Cosine Absolute Value 45','Gensim Cosine Absolute Value 55','Gensim Cosine Absolute Value 65','Gensim Cosine Absolute Value 75');
+title('PDF Plot of Gensim Cosine Absolute Value Distances for Vector sizes 25-75');
+xlim([0 1]);
+saveas(gcf,'gensim_cosine_abs_distances.png')
 hold off;
+
+ksdensity(bray_curtis_25,'function','cdf');
+hold on;
+ksdensity(bray_curtis_35,'function','cdf');
+ksdensity(bray_curtis_45,'function','cdf');
+ksdensity(bray_curtis_55,'function','cdf');
+ksdensity(bray_curtis_65,'function','cdf');
+ksdensity(bray_curtis_75,'function','cdf');
+legend('Bray-Curtis 25','Bray-Curtis 35','Bray-Curtis 45','Bray-Curtis 55','Bray-Curtis 65','Bray-Curtis 75');
+title('CDF Plot of Bray-Curtis Distances for Vector sizes 25-75');
+xlim([0 inf]);
+saveas(gcf,'bray_curtis_distances_cdf.png')
+hold off;
+
+ksdensity(canberra_25,'function','cdf');
+hold on;
+ksdensity(canberra_35,'function','cdf');
+ksdensity(canberra_45,'function','cdf');
+ksdensity(canberra_55,'function','cdf');
+ksdensity(canberra_65,'function','cdf');
+ksdensity(canberra_75,'function','cdf');
+legend('Canberra 25','Canberra 35','Canberra 45','Canberra 55','Canberra 65','Canberra 75');
+title('CDF Plot of Canberra Distances for Vector sizes 25-75');
+xlim([0 inf]);
+saveas(gcf,'canberra_distances_cdf.png')
+hold off;
+
+ksdensity(chebyshev_25,'function','cdf');
+hold on;
+ksdensity(chebyshev_35,'function','cdf');
+ksdensity(chebyshev_45,'function','cdf');
+ksdensity(chebyshev_55,'function','cdf');
+ksdensity(chebyshev_65,'function','cdf');
+ksdensity(chebyshev_75,'function','cdf');
+legend('Chebyshev 25','Chebyshev 35','Chebyshev 45','Chebyshev 55','Chebyshev 65','Chebyshev 75');
+title('CDF Plot of Chebyshev Distances for Vector sizes 25-75');
+xlim([0 inf]);
+saveas(gcf,'chebyshev_distances_cdf.png')
+hold off;
+
+ksdensity(city_block_25,'function','cdf');
+hold on;
+ksdensity(city_block_35,'function','cdf');
+ksdensity(city_block_45,'function','cdf');
+ksdensity(city_block_55,'function','cdf');
+ksdensity(city_block_65,'function','cdf');
+ksdensity(city_block_75,'function','cdf');
+legend('City Block 25','City Block 35','City Block 45','City Block 55','City Block 65','City Block 75');
+title('CDF Plot of City Block Distances for Vector sizes 25-75');
+xlim([0 inf]);
+saveas(gcf,'city_block_distances_cdf.png')
+hold off;
+
+ksdensity(correlation_25,'function','cdf');
+hold on;
+ksdensity(correlation_35,'function','cdf');
+ksdensity(correlation_45,'function','cdf');
+ksdensity(correlation_55,'function','cdf');
+ksdensity(correlation_65,'function','cdf');
+ksdensity(correlation_75,'function','cdf');
+legend('Correlation 25','Correlation 35','Correlation 45','Correlation 55','Correlation 65','Correlation 75');
+title('CDF Plot of Correlation Distances for Vector sizes 25-75');
+xlim([0 inf]);
+saveas(gcf,'correlation_distances_cdf.png')
+hold off;
+
+ksdensity(cosine_25,'function','cdf');
+hold on;
+ksdensity(cosine_35,'function','cdf');
+ksdensity(cosine_45,'function','cdf');
+ksdensity(cosine_55,'function','cdf');
+ksdensity(cosine_65,'function','cdf');
+ksdensity(cosine_75,'function','cdf');
+legend('Cosine 25','Cosine 35','Cosine 45','Cosine 55','Cosine 65','Cosine 75');
+title('CDF Plot of Cosine Distances for Vector sizes 25-75');
+xlim([0 inf]);
+saveas(gcf,'cosine_distances_cdf.png')
+hold off;
+
+ksdensity(euclidian_25,'function','cdf');
+hold on;
+ksdensity(euclidian_35,'function','cdf');
+ksdensity(euclidian_45,'function','cdf');
+ksdensity(euclidian_55,'function','cdf');
+ksdensity(euclidian_65,'function','cdf');
+ksdensity(euclidian_75,'function','cdf');
+legend('Euclidian 25','Euclidian 35','Euclidian 45','Euclidian 55','Euclidian 65','Euclidian 75');
+title('CDF Plot of Euclidian Distances for Vector sizes 25-75');
+xlim([0 inf]);
+saveas(gcf,'euclidian_distances_cdf.png')
+hold off;
+
+ksdensity(gensim_cosine_25,'function','cdf');
+hold on;
+ksdensity(gensim_cosine_35,'function','cdf');
+ksdensity(gensim_cosine_45,'function','cdf');
+ksdensity(gensim_cosine_55,'function','cdf');
+ksdensity(gensim_cosine_65,'function','cdf');
+ksdensity(gensim_cosine_75,'function','cdf');
+legend('Gensim Cosine 25','Gensim Cosine 35','Gensim Cosine 45','Gensim Cosine 55','Gensim Cosine 65','Gensim Cosine 75');
+title('CDF Plot of Gensim Cosine Distances for Vector sizes 25-75');
+xlim([-1 1]);
+saveas(gcf,'gensim_cosine_distances_cdf.png')
+hold off;
+
+ksdensity(head_to_head_norm_25,'function','cdf');
+hold on;
+ksdensity(head_to_head_norm_35,'function','cdf');
+ksdensity(head_to_head_norm_45,'function','cdf');
+ksdensity(head_to_head_norm_55,'function','cdf');
+ksdensity(head_to_head_norm_65,'function','cdf');
+ksdensity(head_to_head_norm_75,'function','cdf');
+legend('Norm  25','Norm  35','Norm  45','Norm  55','Norm  65','Norm  75');
+title('CDF Plot of Norm Length for Vector sizes 25-75');
+xlim([0 inf]);
+saveas(gcf,'head_to_head_norm_distances_cdf.png')
+hold off;
+
+ksdensity(mahalanobis_25,'function','cdf');
+hold on;
+ksdensity(mahalanobis_35,'function','cdf');
+ksdensity(mahalanobis_45,'function','cdf');
+ksdensity(mahalanobis_55,'function','cdf');
+ksdensity(mahalanobis_65,'function','cdf');
+ksdensity(mahalanobis_75,'function','cdf');
+legend('Mahalanobis 25','Mahalanobis 35','Mahalanobis 45','Mahalanobis 55','Mahalanobis 65','Mahalanobis 75');
+title('CDF Plot of Mahalanobis Distances for Vector sizes 25-75');
+xlim([0 inf]);
+saveas(gcf,'mahalanobis_distances_cdf.png')
+hold off;
+
+ksdensity(minowski_25,'function','cdf');
+hold on;
+ksdensity(minowski_35,'function','cdf');
+ksdensity(minowski_45,'function','cdf');
+ksdensity(minowski_55,'function','cdf');
+ksdensity(minowski_65,'function','cdf');
+ksdensity(minowski_75,'function','cdf');
+legend('Minowski  25','Minowski  35','Minowski  45','Minowski  55','Minowski  65','Minowski  75');
+title('CDF Plot of Minowski Distance for Vector sizes 25-75');
+xlim([0 inf]);
+saveas(gcf,'minowski_distances_cdf.png')
+hold off;
+
+ksdensity(sqeuclidian_25,'function','cdf');
+hold on;
+ksdensity(sqeuclidian_35,'function','cdf');
+ksdensity(sqeuclidian_45,'function','cdf');
+ksdensity(sqeuclidian_55,'function','cdf');
+ksdensity(sqeuclidian_65,'function','cdf');
+ksdensity(sqeuclidian_75,'function','cdf');
+legend('Square Euclidian 25','Square Euclidian 35','Square Euclidian 45','Square Euclidian 55','Square Euclidian 65','Square Euclidian 75');
+title('CDF Plot of Square Euclidian Distances for Vector sizes 25-75');
+xlim([0 inf]);
+saveas(gcf,'sqeuclidian_distances_cdf.png')
+hold off;
+
+ksdensity(gensim_cosine_abs_25,'function','cdf');
+hold on;
+ksdensity(gensim_cosine_abs_35,'function','cdf');
+ksdensity(gensim_cosine_abs_45,'function','cdf');
+ksdensity(gensim_cosine_abs_55,'function','cdf');
+ksdensity(gensim_cosine_abs_65,'function','cdf');
+ksdensity(gensim_cosine_abs_75,'function','cdf');
+legend('Gensim Cosine Absolute Value 25','Gensim Cosine Absolute Value 35','Gensim Cosine Absolute Value 45','Gensim Cosine Absolute Value 55','Gensim Cosine Absolute Value 65','Gensim Cosine Absolute Value 75');
+title('CDF Plot of Gensim Cosine Absolute Value Distances for Vector sizes 25-75');
+xlim([0 1]);
+saveas(gcf,'gensim_cosine_abs_distances_cdf.png')
+hold off;
+
+
 
 linestyles_for_all_distances = linspecer(11);
 set(groot,'defaultAxesColorOrder',linestyles_for_all_distances);
@@ -577,7 +748,7 @@ ksdensity(city_block_25_normalized);
 ksdensity(correlation_25_normalized);
 ksdensity(cosine_25_normalized);
 ksdensity(euclidian_25_normalized);
-ksdensity(gensim_cosine_noabs_25_normalized);
+ksdensity(gensim_cosine_25_normalized);
 ksdensity(head_to_head_norm_25_normalized);
 ksdensity(mahalanobis_25_normalized);
 ksdensity(minowski_25_normalized);
@@ -596,7 +767,7 @@ ksdensity(city_block_35_normalized);
 ksdensity(correlation_35_normalized);
 ksdensity(cosine_35_normalized);
 ksdensity(euclidian_35_normalized);
-ksdensity(gensim_cosine_noabs_35_normalized);
+ksdensity(gensim_cosine_35_normalized);
 ksdensity(head_to_head_norm_35_normalized);
 ksdensity(mahalanobis_35_normalized);
 ksdensity(minowski_35_normalized);
@@ -615,7 +786,7 @@ ksdensity(city_block_45_normalized);
 ksdensity(correlation_45_normalized);
 ksdensity(cosine_45_normalized);
 ksdensity(euclidian_45_normalized);
-ksdensity(gensim_cosine_noabs_45_normalized);
+ksdensity(gensim_cosine_45_normalized);
 ksdensity(head_to_head_norm_45_normalized);
 ksdensity(mahalanobis_45_normalized);
 ksdensity(minowski_45_normalized);
@@ -635,7 +806,7 @@ ksdensity(city_block_55_normalized);
 ksdensity(correlation_55_normalized);
 ksdensity(cosine_55_normalized);
 ksdensity(euclidian_55_normalized);
-ksdensity(gensim_cosine_noabs_55_normalized);
+ksdensity(gensim_cosine_55_normalized);
 ksdensity(head_to_head_norm_55_normalized);
 ksdensity(mahalanobis_55_normalized);
 ksdensity(minowski_55_normalized);
@@ -655,7 +826,7 @@ ksdensity(city_block_65_normalized);
 ksdensity(correlation_65_normalized);
 ksdensity(cosine_65_normalized);
 ksdensity(euclidian_65_normalized);
-ksdensity(gensim_cosine_noabs_65_normalized);
+ksdensity(gensim_cosine_65_normalized);
 ksdensity(head_to_head_norm_65_normalized);
 ksdensity(mahalanobis_65_normalized);
 ksdensity(minowski_65_normalized);
@@ -675,7 +846,7 @@ ksdensity(city_block_75_normalized);
 ksdensity(correlation_75_normalized);
 ksdensity(cosine_75_normalized);
 ksdensity(euclidian_75_normalized);
-ksdensity(gensim_cosine_noabs_75_normalized);
+ksdensity(gensim_cosine_75_normalized);
 ksdensity(head_to_head_norm_75_normalized);
 ksdensity(mahalanobis_75_normalized);
 ksdensity(minowski_75_normalized);
@@ -684,4 +855,121 @@ xlim([0 1]);
 legend('Bray-Curtis','Canberra','Chebyshev','City-Block','Correlation','Cosine','Euclidian','Gensim Cosine','Norm','Mahalanobis','Minowski');
 title('PDF Plot of Normalized Distances for Vector Size 75');
 saveas(gcf,'all_distances_75.png')
+hold off;
+
+ksdensity(bray_curtis_25_normalized,'function','cdf')
+hold on;
+ksdensity(canberra_25_normalized,'function','cdf')
+ksdensity(chebyshev_25_normalized,'function','cdf')
+ksdensity(city_block_25_normalized,'function','cdf')
+ksdensity(correlation_25_normalized,'function','cdf')
+ksdensity(cosine_25_normalized,'function','cdf')
+ksdensity(euclidian_25_normalized,'function','cdf')
+ksdensity(gensim_cosine_25_normalized,'function','cdf')
+ksdensity(head_to_head_norm_25_normalized,'function','cdf')
+ksdensity(mahalanobis_25_normalized,'function','cdf')
+ksdensity(minowski_25_normalized,'function','cdf')
+
+xlim([0 1]);
+legend('Bray-Curtis','Canberra','Chebyshev','City-Block','Correlation','Cosine','Euclidian','Gensim Cosine','Norm','Mahalanobis','Minowski');
+title('CDF Plot of Normalized Distances for Vector Size 25');
+saveas(gcf,'all_distances_25_cdf.png')
+hold off;
+
+ksdensity(bray_curtis_35_normalized,'function','cdf')
+hold on;
+ksdensity(canberra_35_normalized,'function','cdf')
+ksdensity(chebyshev_35_normalized,'function','cdf')
+ksdensity(city_block_35_normalized,'function','cdf')
+ksdensity(correlation_35_normalized,'function','cdf')
+ksdensity(cosine_35_normalized,'function','cdf')
+ksdensity(euclidian_35_normalized,'function','cdf')
+ksdensity(gensim_cosine_35_normalized,'function','cdf')
+ksdensity(head_to_head_norm_35_normalized,'function','cdf')
+ksdensity(mahalanobis_35_normalized,'function','cdf')
+ksdensity(minowski_35_normalized,'function','cdf')
+
+xlim([0 1]);
+legend('Bray-Curtis','Canberra','Chebyshev','City-Block','Correlation','Cosine','Euclidian','Gensim Cosine','Norm','Mahalanobis','Minowski');
+title('CDF Plot of Normalized Distances for Vector Size 35');
+saveas(gcf,'all_distances_35_cdf.png')
+hold off;
+
+ksdensity(bray_curtis_45_normalized,'function','cdf')
+hold on;
+ksdensity(canberra_45_normalized,'function','cdf')
+ksdensity(chebyshev_45_normalized,'function','cdf')
+ksdensity(city_block_45_normalized,'function','cdf')
+ksdensity(correlation_45_normalized,'function','cdf')
+ksdensity(cosine_45_normalized,'function','cdf')
+ksdensity(euclidian_45_normalized,'function','cdf')
+ksdensity(gensim_cosine_45_normalized,'function','cdf')
+ksdensity(head_to_head_norm_45_normalized,'function','cdf')
+ksdensity(mahalanobis_45_normalized,'function','cdf')
+ksdensity(minowski_45_normalized,'function','cdf')
+
+xlim([0 1]);
+legend('Bray-Curtis','Canberra','Chebyshev','City-Block','Correlation','Cosine','Euclidian','Gensim Cosine','Norm','Mahalanobis','Minowski');
+title('CDF Plot of Normalized Distances for Vector Size 45');
+saveas(gcf,'all_distances_45_cdf.png')
+hold off;
+
+
+ksdensity(bray_curtis_55_normalized,'function','cdf')
+hold on;
+ksdensity(canberra_55_normalized,'function','cdf')
+ksdensity(chebyshev_55_normalized,'function','cdf')
+ksdensity(city_block_55_normalized,'function','cdf')
+ksdensity(correlation_55_normalized,'function','cdf')
+ksdensity(cosine_55_normalized,'function','cdf')
+ksdensity(euclidian_55_normalized,'function','cdf')
+ksdensity(gensim_cosine_55_normalized,'function','cdf')
+ksdensity(head_to_head_norm_55_normalized,'function','cdf')
+ksdensity(mahalanobis_55_normalized,'function','cdf')
+ksdensity(minowski_55_normalized,'function','cdf')
+
+xlim([0 1]);
+legend('Bray-Curtis','Canberra','Chebyshev','City-Block','Correlation','Cosine','Euclidian','Gensim Cosine','Norm','Mahalanobis','Minowski');
+title('CDF Plot of Normalized Distances for Vector Size 55');
+saveas(gcf,'all_distances_55_cdf.png')
+hold off;
+
+
+ksdensity(bray_curtis_65_normalized,'function','cdf')
+hold on;
+ksdensity(canberra_65_normalized,'function','cdf')
+ksdensity(chebyshev_65_normalized,'function','cdf')
+ksdensity(city_block_65_normalized,'function','cdf')
+ksdensity(correlation_65_normalized,'function','cdf')
+ksdensity(cosine_65_normalized,'function','cdf')
+ksdensity(euclidian_65_normalized,'function','cdf')
+ksdensity(gensim_cosine_65_normalized,'function','cdf')
+ksdensity(head_to_head_norm_65_normalized,'function','cdf')
+ksdensity(mahalanobis_65_normalized,'function','cdf')
+ksdensity(minowski_65_normalized,'function','cdf')
+
+xlim([0 1]);
+legend('Bray-Curtis','Canberra','Chebyshev','City-Block','Correlation','Cosine','Euclidian','Gensim Cosine','Norm','Mahalanobis','Minowski');
+title('CDF Plot of Normalized Distances for Vector Size 65');
+saveas(gcf,'all_distances_65_cdf.png')
+hold off;
+
+
+ksdensity(bray_curtis_75_normalized,'function','cdf')
+hold on;
+ksdensity(canberra_75_normalized,'function','cdf')
+ksdensity(chebyshev_75_normalized,'function','cdf')
+ksdensity(city_block_75_normalized,'function','cdf')
+ksdensity(correlation_75_normalized,'function','cdf')
+ksdensity(cosine_75_normalized,'function','cdf')
+ksdensity(euclidian_75_normalized,'function','cdf')
+ksdensity(gensim_cosine_75_normalized,'function','cdf')
+ksdensity(head_to_head_norm_75_normalized,'function','cdf')
+ksdensity(mahalanobis_75_normalized,'function','cdf')
+ksdensity(minowski_75_normalized,'function','cdf')
+
+xlim([0 1]);
+legend('Bray-Curtis','Canberra','Chebyshev','City-Block','Correlation','Cosine','Euclidian','Gensim Cosine','Norm','Mahalanobis','Minowski');
+title('CDF Plot of Normalized Distances for Vector Size 75');
+saveas(gcf,'all_distances_75_cdf.png')
 hold off;
