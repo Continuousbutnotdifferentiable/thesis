@@ -46,7 +46,7 @@ distanceFunctionDictionary = {"bray_curtis_":distance.braycurtis,"canberra_":dis
 print("Vectors Loaded")
 
 documents = pickle.load(open(inFile,'rb'))
-
+firstVector = False
 for string, vector in vectorDictionary.items():
     word_vectors = vector
     fileDictionary = {}
@@ -85,8 +85,12 @@ for string, vector in vectorDictionary.items():
                         vector1 = word_vectors[documents[file][i]] 
                         vector2 = word_vectors[documents[file][i+1]] 
                         if functionName == "head_to_head_":
+                            if not firstVector:
+                               fileArray.append(word_vectors[documents[file][i]])
+                               firstVector == True
                             vectorBetween = function(vector1,vector2)
                             fileArray.append(linalg.norm(vectorBetween))
+                            vectorArray.append(vectorBetween)
                         else:
                             fileArray.append(function(vector1,vector2))
         absArray.sort()   

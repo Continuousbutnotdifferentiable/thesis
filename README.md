@@ -15,6 +15,8 @@ do naive compression and decompression
 read compression book
     done thru chapter 5
 
+histogram of individual vector entries (75? 50?)
+
 done:
 my_little_python_word2vec - returns kv instances
 distance_calculator - calculates pairwise cosine distances
@@ -23,6 +25,7 @@ similarity finder - outputs lists of similar and dissimilar words
 distance_vector_compressor - returns vectors for pairwise words, and pickle of dictionary,
 txt files for a bunch of distance metrics and different vector dimensions, norms for head_to_head
 plots of 25-75 for each metric and across metrics for each dimension
+histogram of distribution of vector entries
 
 models trained:
 stopped 5,10,50,100,150,200
