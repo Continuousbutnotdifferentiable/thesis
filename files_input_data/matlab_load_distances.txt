@@ -976,27 +976,27 @@ title('CDF Plot of Normalized Distances for Vector Size 75');
 saveas(gcf,'all_distances_75_cdf.png')
 hold off;
 
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_entries_vecs_vecs_25_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_entries_vecs_25_.txt','r');
 head_to_head_entries_vecs_25 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_entries_vecs_vecs_30_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_entries_vecs_30_.txt','r');
 head_to_head_entries_vecs_30 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_entries_vecs_vecs_35_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_entries_vecs_35_.txt','r');
 head_to_head_entries_vecs_35 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_entries_vecs_vecs_40_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_entries_vecs_40_.txt','r');
 head_to_head_entries_vecs_40 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_entries_vecs_vecs_45_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_entries_vecs_45_.txt','r');
 head_to_head_entries_vecs_45 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_entries_vecs_vecs_50_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_entries_vecs_50_.txt','r');
 head_to_head_entries_vecs_50 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_entries_vecs_vecs_55_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_entries_vecs_55_.txt','r');
 head_to_head_entries_vecs_55 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_entries_vecs_vecs_60_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_entries_vecs_60_.txt','r');
 head_to_head_entries_vecs_60 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_entries_vecs_vecs_65_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_entries_vecs_65_.txt','r');
 head_to_head_entries_vecs_65 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_entries_vecs_vecs_70_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_entries_vecs_70_.txt','r');
 head_to_head_entries_vecs_70 = fscanf(fileID,formatSpec);
-fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_entries_vecs_vecs_75_.txt','r');
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_entries_vecs_75_.txt','r');
 head_to_head_entries_vecs_75 = fscanf(fileID,formatSpec);
 
 histogram(head_to_head_entries_vecs_25);
@@ -1023,14 +1023,149 @@ histogram(head_to_head_entries_vecs_75);
 title('Histogram of Vector Entries for Vector Size 75');
 saveas(gcf,'head_to_head_entries_vecs_75_histogram.png');
 
-linestyles_for_multigram = linspecer(3);
-set(groot,'defaultAxesColorOrder',linestyles_for_multigram);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_single_vector_entries_1_vecs_25_.txt','r');
+head_to_head_single_vector_entries_1_vecs_25 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_single_vector_entries_2_vecs_25_.txt','r');
+head_to_head_single_vector_entries_2_vecs_25 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_single_vector_entries_3_vecs_25_.txt','r');
+head_to_head_single_vector_entries_3_vecs_25 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_single_vector_entries_4_vecs_25_.txt','r');
+head_to_head_single_vector_entries_4_vecs_25 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_single_vector_entries_5_vecs_25_.txt','r');
+head_to_head_single_vector_entries_5_vecs_25 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_single_vector_entries_1_vecs_35_.txt','r');
+head_to_head_single_vector_entries_1_vecs_35 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_single_vector_entries_2_vecs_35_.txt','r');
+head_to_head_single_vector_entries_2_vecs_35 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_single_vector_entries_3_vecs_35_.txt','r');
+head_to_head_single_vector_entries_3_vecs_35 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_single_vector_entries_4_vecs_35_.txt','r');
+head_to_head_single_vector_entries_4_vecs_35 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_single_vector_entries_5_vecs_35_.txt','r');
+head_to_head_single_vector_entries_5_vecs_35 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_single_vector_entries_1_vecs_45_.txt','r');
+head_to_head_single_vector_entries_1_vecs_45 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_single_vector_entries_2_vecs_45_.txt','r');
+head_to_head_single_vector_entries_2_vecs_45 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_single_vector_entries_3_vecs_45_.txt','r');
+head_to_head_single_vector_entries_3_vecs_45 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_single_vector_entries_4_vecs_45_.txt','r');
+head_to_head_single_vector_entries_4_vecs_45 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_single_vector_entries_5_vecs_45_.txt','r');
+head_to_head_single_vector_entries_5_vecs_45 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_single_vector_entries_1_vecs_55_.txt','r');
+head_to_head_single_vector_entries_1_vecs_55 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_single_vector_entries_2_vecs_55_.txt','r');
+head_to_head_single_vector_entries_2_vecs_55 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_single_vector_entries_3_vecs_55_.txt','r');
+head_to_head_single_vector_entries_3_vecs_55 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_single_vector_entries_4_vecs_55_.txt','r');
+head_to_head_single_vector_entries_4_vecs_55 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_single_vector_entries_5_vecs_55_.txt','r');
+head_to_head_single_vector_entries_5_vecs_55 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_single_vector_entries_1_vecs_65_.txt','r');
+head_to_head_single_vector_entries_1_vecs_65 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_single_vector_entries_2_vecs_65_.txt','r');
+head_to_head_single_vector_entries_2_vecs_65 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_single_vector_entries_3_vecs_65_.txt','r');
+head_to_head_single_vector_entries_3_vecs_65 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_single_vector_entries_4_vecs_65_.txt','r');
+head_to_head_single_vector_entries_4_vecs_65 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_single_vector_entries_5_vecs_65_.txt','r');
+head_to_head_single_vector_entries_5_vecs_65 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_single_vector_entries_1_vecs_75_.txt','r');
+head_to_head_single_vector_entries_1_vecs_75 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_single_vector_entries_2_vecs_75_.txt','r');
+head_to_head_single_vector_entries_2_vecs_75 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_single_vector_entries_3_vecs_75_.txt','r');
+head_to_head_single_vector_entries_3_vecs_75 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_single_vector_entries_4_vecs_75_.txt','r');
+head_to_head_single_vector_entries_4_vecs_75 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_single_vector_entries_5_vecs_75_.txt','r');
+head_to_head_single_vector_entries_5_vecs_75 = fscanf(fileID,formatSpec);
 
-h25 = histogram(head_to_head_entries_vecs_25,'Normalization','probability');
-hold on;
-h45 = histogram(head_to_head_entries_vecs_45,'Normalization','probability');
-h65 = histogram(head_to_head_entries_vecs_65,'Normalization','probability');
+linestyles_for_vector_entries_per = linspecer(5);
+set(groot,'defaultAxesColorOrder',linestyles_for_vector_entries_per);
 
+ksdensity(head_to_head_single_vector_entries_1_vecs_25);
+hold on
+ksdensity(head_to_head_single_vector_entries_2_vecs_25);
+ksdensity(head_to_head_single_vector_entries_3_vecs_25);
+ksdensity(head_to_head_single_vector_entries_4_vecs_25);
+ksdensity(head_to_head_single_vector_entries_5_vecs_25);
+title('PDF of Entries for 5 Words of Dimension 25');
+saveas(gcf,'head_to_head_single_vector_entries_vecs_25.png');
+hold off;
 
-title('Multi-Histogram of Vector Entries for Vector Sizes 25,45,65');
-saveas(gcf,'head_to_head_entries_vecs_multi_histogram.png');
+ksdensity(head_to_head_single_vector_entries_1_vecs_75);
+hold on
+ksdensity(head_to_head_single_vector_entries_2_vecs_75);
+ksdensity(head_to_head_single_vector_entries_3_vecs_75);
+ksdensity(head_to_head_single_vector_entries_4_vecs_75);
+ksdensity(head_to_head_single_vector_entries_5_vecs_75);
+title('PDF of Entries for 5 Words of Dimension 75');
+saveas(gcf,'head_to_head_single_vector_entries_vecs_75.png');
+hold off;
+
+linestyles_for_vector_entries_per = linspecer(6);
+set(groot,'defaultAxesColorOrder',linestyles_for_vector_entries_per);
+
+ksdensity(head_to_head_single_vector_entries_1_vecs_25);
+hold on
+ksdensity(head_to_head_single_vector_entries_1_vecs_35);
+ksdensity(head_to_head_single_vector_entries_1_vecs_45);
+ksdensity(head_to_head_single_vector_entries_1_vecs_55);
+ksdensity(head_to_head_single_vector_entries_1_vecs_65);
+ksdensity(head_to_head_single_vector_entries_1_vecs_75);
+title('PDF of Entries for Word 1 of Dimensions 25-75');
+legend('Dimension 25','Dimension 35','Dimension 45','Dimension 55','Dimension 65','Dimension 75')
+saveas(gcf,'head_to_head_single_vector_entries_word1_vecs_75.png');
+hold off;
+
+ksdensity(head_to_head_single_vector_entries_2_vecs_25);
+hold on
+ksdensity(head_to_head_single_vector_entries_2_vecs_35);
+ksdensity(head_to_head_single_vector_entries_2_vecs_45);
+ksdensity(head_to_head_single_vector_entries_2_vecs_55);
+ksdensity(head_to_head_single_vector_entries_2_vecs_65);
+ksdensity(head_to_head_single_vector_entries_2_vecs_75);
+title('PDF of Entries for Word 2 of Dimensions 25-75');
+legend('Dimension 25','Dimension 35','Dimension 45','Dimension 55','Dimension 65','Dimension 75')
+saveas(gcf,'head_to_head_single_vector_entries_word2_vecs_75.png');
+hold off;
+
+ksdensity(head_to_head_single_vector_entries_3_vecs_45);
+hold on
+ksdensity(head_to_head_single_vector_entries_3_vecs_35);
+ksdensity(head_to_head_single_vector_entries_3_vecs_45);
+ksdensity(head_to_head_single_vector_entries_3_vecs_55);
+ksdensity(head_to_head_single_vector_entries_3_vecs_65);
+ksdensity(head_to_head_single_vector_entries_3_vecs_75);
+title('PDF of Entries for Word 3 of Dimensions 45-75');
+legend('Dimension 45','Dimension 35','Dimension 45','Dimension 55','Dimension 65','Dimension 75')
+saveas(gcf,'head_to_head_single_vector_entries_word3_vecs_75.png');
+hold off;
+
+ksdensity(head_to_head_single_vector_entries_4_vecs_45);
+hold on
+ksdensity(head_to_head_single_vector_entries_4_vecs_35);
+ksdensity(head_to_head_single_vector_entries_4_vecs_45);
+ksdensity(head_to_head_single_vector_entries_4_vecs_55);
+ksdensity(head_to_head_single_vector_entries_4_vecs_65);
+ksdensity(head_to_head_single_vector_entries_4_vecs_75);
+title('PDF of Entries for Word 4 of Dimensions 45-75');
+legend('Dimension 45','Dimension 35','Dimension 45','Dimension 55','Dimension 65','Dimension 75')
+saveas(gcf,'head_to_head_single_vector_entries_word4_vecs_75.png');
+hold off;
+
+ksdensity(head_to_head_single_vector_entries_5_vecs_45);
+hold on
+ksdensity(head_to_head_single_vector_entries_5_vecs_55);
+ksdensity(head_to_head_single_vector_entries_5_vecs_45);
+ksdensity(head_to_head_single_vector_entries_5_vecs_55);
+ksdensity(head_to_head_single_vector_entries_5_vecs_65);
+ksdensity(head_to_head_single_vector_entries_5_vecs_75);
+title('PDF of Entries for Word 5 of Dimensions 45-75');
+legend('Dimension 45','Dimension 55','Dimension 45','Dimension 55','Dimension 65','Dimension 75')
+saveas(gcf,'head_to_head_single_vector_entries_word5_vecs_75.png');
+hold off;

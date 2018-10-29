@@ -15,7 +15,9 @@ do naive compression and decompression
 read compression book
     done thru chapter 5
 
-histogram of individual vector entries (75? 50?)
+get word variances and find high/low variance words
+plot distributions for those words
+see if it holds across dimensions(hypothesis: yes)
 
 done:
 my_little_python_word2vec - returns kv instances
@@ -26,6 +28,7 @@ distance_vector_compressor - returns vectors for pairwise words, and pickle of d
 txt files for a bunch of distance metrics and different vector dimensions, norms for head_to_head
 plots of 25-75 for each metric and across metrics for each dimension
 histogram of distribution of vector entries
+PDF of individual vector entries
 
 models trained:
 stopped 5,10,50,100,150,200
