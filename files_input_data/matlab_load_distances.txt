@@ -1134,7 +1134,7 @@ legend('Dimension 25','Dimension 35','Dimension 45','Dimension 55','Dimension 65
 saveas(gcf,'head_to_head_single_vector_entries_word2_vecs_75.png');
 hold off;
 
-ksdensity(head_to_head_single_vector_entries_3_vecs_45);
+ksdensity(head_to_head_single_vector_entries_3_vecs_25);
 hold on
 ksdensity(head_to_head_single_vector_entries_3_vecs_35);
 ksdensity(head_to_head_single_vector_entries_3_vecs_45);
@@ -1142,11 +1142,11 @@ ksdensity(head_to_head_single_vector_entries_3_vecs_55);
 ksdensity(head_to_head_single_vector_entries_3_vecs_65);
 ksdensity(head_to_head_single_vector_entries_3_vecs_75);
 title('PDF of Entries for Word 3 of Dimensions 45-75');
-legend('Dimension 45','Dimension 35','Dimension 45','Dimension 55','Dimension 65','Dimension 75')
+legend('Dimension 25','Dimension 35','Dimension 45','Dimension 55','Dimension 65','Dimension 75')
 saveas(gcf,'head_to_head_single_vector_entries_word3_vecs_75.png');
 hold off;
 
-ksdensity(head_to_head_single_vector_entries_4_vecs_45);
+ksdensity(head_to_head_single_vector_entries_4_vecs_25);
 hold on
 ksdensity(head_to_head_single_vector_entries_4_vecs_35);
 ksdensity(head_to_head_single_vector_entries_4_vecs_45);
@@ -1154,18 +1154,147 @@ ksdensity(head_to_head_single_vector_entries_4_vecs_55);
 ksdensity(head_to_head_single_vector_entries_4_vecs_65);
 ksdensity(head_to_head_single_vector_entries_4_vecs_75);
 title('PDF of Entries for Word 4 of Dimensions 45-75');
-legend('Dimension 45','Dimension 35','Dimension 45','Dimension 55','Dimension 65','Dimension 75')
+legend('Dimension 25','Dimension 35','Dimension 45','Dimension 55','Dimension 65','Dimension 75')
 saveas(gcf,'head_to_head_single_vector_entries_word4_vecs_75.png');
 hold off;
 
-ksdensity(head_to_head_single_vector_entries_5_vecs_45);
+ksdensity(head_to_head_single_vector_entries_5_vecs_25);
 hold on
-ksdensity(head_to_head_single_vector_entries_5_vecs_55);
+ksdensity(head_to_head_single_vector_entries_5_vecs_35);
 ksdensity(head_to_head_single_vector_entries_5_vecs_45);
 ksdensity(head_to_head_single_vector_entries_5_vecs_55);
 ksdensity(head_to_head_single_vector_entries_5_vecs_65);
 ksdensity(head_to_head_single_vector_entries_5_vecs_75);
 title('PDF of Entries for Word 5 of Dimensions 45-75');
-legend('Dimension 45','Dimension 55','Dimension 45','Dimension 55','Dimension 65','Dimension 75')
+legend('Dimension 25','Dimension 35','Dimension 45','Dimension 55','Dimension 65','Dimension 75')
 saveas(gcf,'head_to_head_single_vector_entries_word5_vecs_75.png');
 hold off;
+
+linestyles_for_vector_entries_dimension_per = linspecer(5);
+set(groot,'defaultAxesColorOrder',linestyles_for_vector_entries_dimension_per);
+
+ksdensity(head_to_head_single_vector_entries_dimension_1_vecs_25);
+hold on
+ksdensity(head_to_head_single_vector_entries_dimension_2_vecs_25);
+ksdensity(head_to_head_single_vector_entries_dimension_3_vecs_25);
+ksdensity(head_to_head_single_vector_entries_dimension_4_vecs_25);
+ksdensity(head_to_head_single_vector_entries_dimension_5_vecs_25);
+title('PDF of Entries for 5 Entries of Vector Dimension 25');
+saveas(gcf,'head_to_head_single_vector_entries_dimension_vecs_25.png');
+hold off;
+
+ksdensity(head_to_head_single_vector_entries_dimension_1_vecs_75);
+hold on
+ksdensity(head_to_head_single_vector_entries_dimension_2_vecs_75);
+ksdensity(head_to_head_single_vector_entries_dimension_3_vecs_75);
+ksdensity(head_to_head_single_vector_entries_dimension_4_vecs_75);
+ksdensity(head_to_head_single_vector_entries_dimension_5_vecs_75);
+title('PDF of Entries for 5 Entries of Vector Dimension 75');
+saveas(gcf,'head_to_head_single_vector_entries_dimension_vecs_75.png');
+hold off;
+
+linestyles_for_vector_entries_dimension_per = linspecer(6);
+set(groot,'defaultAxesColorOrder',linestyles_for_vector_entries_dimension_per);
+
+ksdensity(head_to_head_single_vector_entries_dimension_1_vecs_25);
+hold on
+ksdensity(head_to_head_single_vector_entries_dimension_1_vecs_35);
+ksdensity(head_to_head_single_vector_entries_dimension_1_vecs_45);
+ksdensity(head_to_head_single_vector_entries_dimension_1_vecs_55);
+ksdensity(head_to_head_single_vector_entries_dimension_1_vecs_65);
+ksdensity(head_to_head_single_vector_entries_dimension_1_vecs_75);
+title('PDF of Entries for Entry 1 of Dimensions 25-75');
+legend('Dimension 25','Dimension 35','Dimension 45','Dimension 55','Dimension 65','Dimension 75')
+saveas(gcf,'head_to_head_single_vector_entries_dimension_1_vecs_75.png');
+hold off;
+
+ksdensity(head_to_head_single_vector_entries_dimension_2_vecs_25);
+hold on
+ksdensity(head_to_head_single_vector_entries_dimension_2_vecs_35);
+ksdensity(head_to_head_single_vector_entries_dimension_2_vecs_45);
+ksdensity(head_to_head_single_vector_entries_dimension_2_vecs_55);
+ksdensity(head_to_head_single_vector_entries_dimension_2_vecs_65);
+ksdensity(head_to_head_single_vector_entries_dimension_2_vecs_75);
+title('PDF of Entries for Entry 2 of Dimensions 25-75');
+legend('Dimension 25','Dimension 35','Dimension 45','Dimension 55','Dimension 65','Dimension 75')
+saveas(gcf,'head_to_head_single_vector_entries_dimension_2_vecs_75.png');
+hold off;
+
+ksdensity(head_to_head_single_vector_entries_dimension_3_vecs_25);
+hold on
+ksdensity(head_to_head_single_vector_entries_dimension_3_vecs_35);
+ksdensity(head_to_head_single_vector_entries_dimension_3_vecs_45);
+ksdensity(head_to_head_single_vector_entries_dimension_3_vecs_55);
+ksdensity(head_to_head_single_vector_entries_dimension_3_vecs_65);
+ksdensity(head_to_head_single_vector_entries_dimension_3_vecs_75);
+title('PDF of Entries for Entry 3 of Dimensions 25-75');
+legend('Dimension 45','Dimension 35','Dimension 45','Dimension 55','Dimension 65','Dimension 75')
+saveas(gcf,'head_to_head_single_vector_entries_dimension_3_vecs_75.png');
+hold off;
+
+ksdensity(head_to_head_single_vector_entries_dimension_4_vecs_25);
+hold on
+ksdensity(head_to_head_single_vector_entries_dimension_4_vecs_35);
+ksdensity(head_to_head_single_vector_entries_dimension_4_vecs_45);
+ksdensity(head_to_head_single_vector_entries_dimension_4_vecs_55);
+ksdensity(head_to_head_single_vector_entries_dimension_4_vecs_65);
+ksdensity(head_to_head_single_vector_entries_dimension_4_vecs_75);
+title('PDF of Entries for Entry 4 of Dimensions 25-75');
+legend('Dimension 25','Dimension 35','Dimension 45','Dimension 55','Dimension 65','Dimension 75')
+saveas(gcf,'head_to_head_single_vector_entries_dimension_4_vecs_75.png');
+hold off;
+
+ksdensity(head_to_head_single_vector_entries_dimension_5_vecs_25);
+hold on
+ksdensity(head_to_head_single_vector_entries_dimension_5_vecs_35);
+ksdensity(head_to_head_single_vector_entries_dimension_5_vecs_45);
+ksdensity(head_to_head_single_vector_entries_dimension_5_vecs_55);
+ksdensity(head_to_head_single_vector_entries_dimension_5_vecs_65);
+ksdensity(head_to_head_single_vector_entries_dimension_5_vecs_75);
+title('PDF of Entries for Entry 5 of Dimensions 25-75');
+legend('Dimension 25','Dimension 35','Dimension 45','Dimension 55','Dimension 65','Dimension 75')
+saveas(gcf,'head_to_head_single_vector_entries_dimension_5_vecs_75.png');
+hold off;
+
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_variance_vecs_25_.txt','r');
+head_to_head_variance_vecs_25 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_variance_vecs_35_.txt','r');
+head_to_head_variance_vecs_35 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_variance_vecs_45_.txt','r');
+head_to_head_variance_vecs_45 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_variance_vecs_55_.txt','r');
+head_to_head_variance_vecs_55 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_variance_vecs_65_.txt','r');
+head_to_head_variance_vecs_65 = fscanf(fileID,formatSpec);
+fileID = fopen('/Users/the8cho/Downloads/Thesis/thesis/Ignored/distance_data_10000/head_to_head_variance_vecs_75_.txt','r');
+head_to_head_variance_vecs_75 = fscanf(fileID,formatSpec);
+
+linestyles_for_vector_entries_per = linspecer(6);
+set(groot,'defaultAxesColorOrder',linestyles_for_vector_entries_per);
+
+ksdensity(head_to_head_variance_vecs_25);
+hold on
+ksdensity(head_to_head_variance_vecs_35);
+ksdensity(head_to_head_variance_vecs_45);
+ksdensity(head_to_head_variance_vecs_55);
+ksdensity(head_to_head_variance_vecs_65);
+ksdensity(head_to_head_variance_vecs_75);
+title('PDF of Vector to Vector Entry Variance for Dimensions 25-75');
+legend('Dimension 25','Dimension 35','Dimension 45','Dimension 55','Dimension 65','Dimension 75');
+xlim([0 inf]);
+saveas(gcf,'head_to_head_variance_pdf.png');
+hold off;
+
+ksdensity(head_to_head_variance_vecs_25,'function','cdf');
+hold on
+ksdensity(head_to_head_variance_vecs_35,'function','cdf');
+ksdensity(head_to_head_variance_vecs_45,'function','cdf');
+ksdensity(head_to_head_variance_vecs_55,'function','cdf');
+ksdensity(head_to_head_variance_vecs_65,'function','cdf');
+ksdensity(head_to_head_variance_vecs_75,'function','cdf');
+title('CDF of Vector to Vector Entry Variance for Dimensions 25-75');
+xlim([0 inf]);
+legend('Dimension 25','Dimension 35','Dimension 45','Dimension 55','Dimension 65','Dimension 75');
+saveas(gcf,'head_to_head_variance_cdf.png');
+hold off;
+
