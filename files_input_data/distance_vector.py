@@ -54,6 +54,7 @@ for string, vector in vectorDictionary.items():
         fileArray = []
         absArray =[]
         vectorArray = []
+        normArray = []
         if functionName == "mahalanobis_":
             while len(vectorArray) <= 1000:
                 for i in range(0,len(documents[file])-1):
@@ -89,7 +90,7 @@ for string, vector in vectorDictionary.items():
                                fileArray.append(word_vectors[documents[file][i]])
                                firstVector == True
                             vectorBetween = function(vector1,vector2)
-                            fileArray.append(linalg.norm(vectorBetween))
+                            normArray.append(linalg.norm(vectorBetween))
                             vectorArray.append(vectorBetween)
                         else:
                             fileArray.append(function(vector1,vector2))
@@ -97,7 +98,7 @@ for string, vector in vectorDictionary.items():
         fileArray.sort()
         if functionName == "head_to_head_":
             with open(functionName+'norm_'+string+".txt","w") as f:
-                for item in fileArray:
+                for item in normArray:
                     f.write("%s\n" % item)
             f.close()
         else:

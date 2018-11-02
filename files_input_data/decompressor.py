@@ -3,11 +3,17 @@ import csv
 import sys
 import gzip
 import logging
-import numpy
+import numpy as np
 
 inPickle = sys.argv[1]
 inVectors = sys.argv[2]
 outFile = inVectors[-12:-4] + "decompressed_" + ".txt"
+
+def head_to_head_undo(vector1,vector2):
+    newWord = []
+    for i in range(0,len(vector1)):
+        newWord.append(vector1[i]+vector2[i])
+    return newWord
 
 if inPickle[-2:] != ".p":
     print("First arg must be .p (pickle) file.")
@@ -24,22 +30,30 @@ with open(inVectors,"r") as f:
     data = list(list(rec) for rec in csv.reader(f, delimiter=','))
 f.close()
 
+# Convert strings to vectors
+for vector in data:
+    for item in range(0,len(vector)):
+        vector[item] = float(vector[item])
+
 outString = ""
 count = 0
-for vec in range(0,1):
-    for string, vector in compressionDictionary.items():
-        if data[vec] == vector:
-            print(True)
-            words = string.split()
-            outString+= (words[0]+' ')
-            print(outString)
-            count += 1
-        if count == 12:
-            outString+= "\n"
-            count = 0
-
+successorWord = head_to_head_undo(data[0],data[1])
+for i in range(1,len(data)):
+    if i == 0:
+        for word,vector in compressionDictionary.items():
+            if np.allclose(vector,data[0]):
+                outString += word + " "
+                count+= 1
+    for word,vector in compressionDictionary.items():
+            if np.allclose(successorWord,vector):
+                print (word)
+                outString += word + " "
+                successorWord = head_to_head_undo(successorWord,data[i+1])
+                count+= 1           
+    if count == 10:
+        outString += '\n'
+print (outString)
 with open(outFile,"w") as f:
     f.write(outString)
 f.close
-
 
