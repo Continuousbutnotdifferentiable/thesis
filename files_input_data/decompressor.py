@@ -37,21 +37,23 @@ for vector in data:
 
 outString = ""
 count = 0
-successorWord = head_to_head_undo(data[0],data[1])
-for i in range(1,len(data)):
-    if i == 0:
-        for word,vector in compressionDictionary.items():
-            if np.allclose(vector,data[0]):
-                outString += word + " "
-                count+= 1
+
+
+for word,vector in compressionDictionary.items():
+    if np.allclose(vector,data[0]):
+        outString += word + " "
+        count+= 1
+successorWordVector = head_to_head_undo(data[0],data[1])
+for i in range(2,len(data)+1):
     for word,vector in compressionDictionary.items():
-            if np.allclose(successorWord,vector):
+            if np.allclose(successorWordVector,vector,atol=1e-01):
                 print (word)
                 outString += word + " "
-                successorWord = head_to_head_undo(successorWord,data[i+1])
+                successorWordVector = head_to_head_undo(successorWordVector,data[i])
                 count+= 1           
     if count == 10:
         outString += '\n'
+    
 print (outString)
 with open(outFile,"w") as f:
     f.write(outString)

@@ -45,20 +45,24 @@ for string, vector in vectorDictionary.items():
         for file in range(0,99):    
             for i in range(0,len(documents[file])-1):
                 if documents[file][i] in word_vectors.vocab and documents[file][i+1] in word_vectors.vocab:
-                    vector1 = word_vectors[documents[file][i]] 
-                    vector2 = word_vectors[documents[file][i+1]] 
+                    vector1 = word_vectors[documents[file][i]]
+                    newVector1 = []
+                    for k in range(0,len(vector1)):
+                            newVector1.append(int(vector1[k]))  
+                    vector2 = word_vectors[documents[file][i+1]]
+                    newVector2 = []
+                    for j in range(0,len(vector2)):
+                            newVector2.append(int(vector2[j]))   
                     if functionName == "head_to_head_":
                         if len(vectorsArray) == 0:
-                            print(documents[file][i],"\n")
-                            print(vector1,"\n")
-                            vectorsArray.append(vector1)
-                        vectorBetween = function(vector1,vector2)
+                            vectorsArray.append(newVector1)
+                        vectorBetween = function(newVector1,newVector2)
                         vectorsArray.append(vectorBetween) 
-                        fileDictionary[documents[file][i]] = vector1
-                        fileDictionary[documents[file][i+1]] = vector2                
-        #with open("pickle_dictionary_"+string+".p", 'wb') as f:  
-            #pickle.dump(fileDictionary, f)
-        #f.close()
+                        fileDictionary[documents[file][i]] = newVector1
+                        fileDictionary[documents[file][i+1]] = newVector2                
+        with open("pickle_dictionary_"+string+".p", 'wb') as f:  
+            pickle.dump(fileDictionary, f)
+        f.close()
         with open("vectors_out_"+string+".csv", 'w') as g:
             writer = csv.writer(g)
             writer.writerows(vectorsArray)
