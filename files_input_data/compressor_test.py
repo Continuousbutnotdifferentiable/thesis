@@ -22,14 +22,8 @@ nostop = True
 inFile = sys.argv[1]
 if nostop:
     word_vectors_25 = KeyedVectors.load("vecs_25_nostop.kv", mmap='r')
-    word_vectors_35 = KeyedVectors.load("vecs_35_nostop.kv", mmap='r')
-    word_vectors_45 = KeyedVectors.load("vecs_45_nostop.kv", mmap='r')
-    word_vectors_55 = KeyedVectors.load("vecs_55_nostop.kv", mmap='r')
-    word_vectors_65 = KeyedVectors.load("vecs_65_nostop.kv", mmap='r')
-    word_vectors_75 = KeyedVectors.load("vecs_75_nostop.kv", mmap='r')
     
-vectorDictionary = {"vecs_25_":word_vectors_25, "vecs_35_":word_vectors_35, "vecs_45_":word_vectors_45,
-                    "vecs_55_":word_vectors_55, "vecs_65_":word_vectors_65, "vecs_75_":word_vectors_75}
+vectorDictionary = {"vecs_25_":word_vectors_25}
 
 distanceFunctionDictionary = {"head_to_head_":headToHead}
 
@@ -57,6 +51,7 @@ for string, vector in vectorDictionary.items():
                     while count < 5:
                         print (i, " "+ documents[file][i]+ " ", newVector1,"\n")
                         print (i+1, " "+ documents[file][i+1]+ " ", newVector2,"\n")
+                        print ("count = ", count, "\n")
                         count += 1
                     if len(vectorsArray) == 0:
                         vectorsArray.append(newVector1)
