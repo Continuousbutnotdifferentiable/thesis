@@ -13,7 +13,7 @@ logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=lo
 
 def headToHead(word1,word2):
     newVec = []
-    for i in range(0,len(word1)):
+    for i in range(0,len(word2)):
         newVec.append(word2[i]-word1[i])
     return newVec
 
@@ -37,7 +37,9 @@ for string, vector in vectorDictionary.items():
     count = 0 
     for functionName, function in distanceFunctionDictionary.items():
         vectorsArray = []
-        for file in range(0,99):    
+        for file in range(0,99):
+            if len(documents[file]) < 5:
+                continue
             for i in range(0,len(documents[file])-1):
                 if documents[file][i] in word_vectors.vocab and documents[file][i+1] in word_vectors.vocab:
                     vector1 = word_vectors[documents[file][i]]
@@ -48,16 +50,14 @@ for string, vector in vectorDictionary.items():
                     newVector2 = []
                     for j in range(0,len(vector2)):
                             newVector2.append(int(vector2[j]))
-                    while count < 5:
-                        print (i, " "+ documents[file][i]+ " ", newVector1,"\n")
-                        print (i+1, " "+ documents[file][i+1]+ " ", newVector2,"\n")
-                        print ("count = ", count, "\n")
-                        count += 1
-                    if len(vectorsArray) == 0:
+                    if i == 0:
+                        newVector1.append("S")
+                        fileDictionary[documents[file][i]] = newVector1[:-1]
                         vectorsArray.append(newVector1)
+                    else:
+                        fileDictionary[documents[file][i]] = newVector1
                     vectorBetween = function(newVector1,newVector2)
-                    vectorsArray.append(vectorBetween) 
-                    fileDictionary[documents[file][i]] = newVector1
+                    vectorsArray.append(vectorBetween)
                     fileDictionary[documents[file][i+1]] = newVector2                
         with open("pickle_dictionary_"+string+".p", 'wb') as f:  
             pickle.dump(fileDictionary, f)
