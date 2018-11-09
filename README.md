@@ -44,3 +44,5 @@ build the models using my_little...
 Long Term Todo:
 Rebuild/Retrain everything using OANC corpus
 Pick ideal vector dimension
+
+asc = [ chr(80+x) for x in data ]
