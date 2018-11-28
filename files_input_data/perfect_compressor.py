@@ -15,6 +15,13 @@ from gensim.models import KeyedVectors
 
 DECIMAL_PLACES = 1
 
+def head_to_head_undo(vector1,vector2,length):
+    newWord = []
+    for i in range(length):
+        newWord.append(vector1[i]+vector2[i])
+    return newWord
+
+
 def headToHead(word1,word2):
     newVector = []
     for i in range(0,len(word1)):
@@ -24,7 +31,7 @@ def headToHead(word1,word2):
 def vectorShrinker(vector):
     newVector = []
     for entry in vector:
-        newVector.append(round(entry,DECIMAL_PLACES))
+        newVector.append(int(10*round(entry,DECIMAL_PLACES)))
     return newVector  
 
 def fileOpener(inFile):
@@ -109,14 +116,16 @@ for string, vector in vectorDictionary.items():
         outArray = outArrayMaker(inFileArray,word_vectors)
         decapArray = decapitalizer(inFileArray)
         firstWord = True
-        for i in range(len(decapArray)):
+        i = 0
+        while i in range(len(decapArray)):
             if firstWord:
                 if decapArray[i] not in word_vectors.vocab:
                     continue
                 else:
                     # CHANGE THIS TO BE LESS SLOPPY CALL FUNCTION
                     outArray[i][:length] = vectorShrinker(word_vectors[decapArray[i]])
-                    firstWord = True
+                    print ("THE")
+                    firstWord = False
             newVector1 = vectorShrinker(word_vectors[decapArray[i]])
             newIndex = indexGetter(outArray,i)
             if newIndex == None:
