@@ -7,18 +7,6 @@ what this means for me tho is that the distance implementation still needs to st
 
 todo:
 
-write up arithmetic coding eg in python
-    file pg 112, pg 132 
-
-do naive compression and decompression
-
-read compression book
-    done thru chapter 5
-
-get word variances and find high/low variance words
-plot distributions for those words
-see if it holds across dimensions(hypothesis: yes)
-
 done:
 my_little_python_word2vec - returns kv instances
 distance_calculator - calculates pairwise cosine distances
