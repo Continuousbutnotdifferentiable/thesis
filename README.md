@@ -6,6 +6,11 @@ apparently gensim already downsamples stopwords when its doing the model trainin
 what this means for me tho is that the distance implementation still needs to strip out stopwords
 
 todo:
+try dumping dictionary to .txt instead of .p file;
+try compression/decompression on much larger file (1-2mb);
+    see how dictionary scales etc
+clean up github repo
+    deal with charts,graphs
 
 done:
 my_little_python_word2vec - returns kv instances
